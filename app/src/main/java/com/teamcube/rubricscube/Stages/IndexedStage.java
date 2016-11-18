@@ -3,10 +3,11 @@ package com.teamcube.rubricscube.Stages;
 import com.davidstemmer.screenplay.stage.XmlStage;
 
 /**
+<<<<<<< HEAD
  * Created by aaroncampbell on 11/17/16.
  */
 
-public abstract class IndexedStage extends XmlStage {
+public class IndexedStage extends XmlStage{
     public final String id;
 
     protected IndexedStage(String id) {
@@ -26,5 +27,15 @@ public abstract class IndexedStage extends XmlStage {
     @Override
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
+    }
+
+    @Override
+    public int getLayoutId() {
+        return 0;
+    }
+
+    @Override
+    public Rigger getRigger() {
+        return null;
     }
 }

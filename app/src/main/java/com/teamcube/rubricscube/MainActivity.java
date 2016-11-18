@@ -5,21 +5,27 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
+
 import com.davidstemmer.flow.plugin.screenplay.ScreenplayDispatcher;
 import com.teamcube.rubricscube.Stages.CubeLegendStage;
+import com.teamcube.rubricscube.Stages.UserCubeInputStage;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import flow.Flow;
 import flow.History;
 
 public class MainActivity extends AppCompatActivity {
-    private Menu menu;
+    private String TAG = "MainActivity";
     private Flow flow;
     private ScreenplayDispatcher dispatcher;
+    private Menu menu;
 
     @Bind(R.id.container)
     RelativeLayout container;
 
+    public MainActivity() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
 
-        flow = RubricsCubeApp.getMainFlow(); // Reference to main Flow application
+        flow = RubricsCubeApplication.getMainFlow(); // Reference to main Flow application
         dispatcher = new ScreenplayDispatcher(this, container);
         dispatcher.setUp(flow);
 
@@ -58,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         if (!flow.goBack()) {
             flow.removeDispatcher(dispatcher);
-            flow.setHistory(History.single(new CubeLegendStage()),
+            flow.setHistory(History.single(new UserCubeInputStage()),
                     Flow.Direction.BACKWARD);
             super.onBackPressed();
         }

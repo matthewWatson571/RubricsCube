@@ -2,7 +2,7 @@ package com.teamcube.rubricscube;
 
 import android.util.Log;
 
-import com.teamcube.rubricscube.Models.LegendImageModel;
+import com.teamcube.rubricscube.Models.LegendModel;
 
 import java.util.ArrayList;
 
@@ -11,12 +11,10 @@ import java.util.ArrayList;
  */
 
 public class Utils {
-    protected int imageOneId;
-    protected int imageTwoId;
 
     public static void getData() {
 
-        ArrayList<LegendImageModel> liM = new ArrayList<>();
+        ArrayList<LegendModel> liM = new ArrayList<>();
 
         int[] images = {
                 R.drawable.notau,
@@ -62,7 +60,7 @@ public class Utils {
 
 //        for (int i = 0; i <= images.length; i++) {
 //            for (int j = 0; i <= icons.length; j++) {
-//                LegendImageModel imageModel = new LegendImageModel();
+//                LegendModel imageModel = new LegendModel();
 //
 //                imageModel.setImageOneId(images[i]);
 //                imageModel.setImageTwoId(icons[j]);
