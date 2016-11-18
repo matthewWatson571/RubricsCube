@@ -20,8 +20,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -51,4 +50,5 @@ dependencies {
     compile 'com.davidstemmer.screenplay:flow-plugin:0.12'
     compile 'com.squareup.flow:flow:0.12'
     compile 'com.squareup.mortar:mortar:0.20'
+    compile files('libs/twophase .jar')
 }
