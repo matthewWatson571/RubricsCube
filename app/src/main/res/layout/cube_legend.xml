@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teamcube.rubricscube.Views.CubeLegendView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ebf5f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/moveslist"
+        android:text="Moves List"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp">
+
+        <ImageView
+            app:srcCompat="@drawable/faceref"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/facerefview"
+            android:layout_width="45dp"
+            android:layout_height="55dp" />
+
+        <TextView
+            android:text="Face Side Reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/facesidetextview"
+            android:layout_alignBottom="@+id/facerefview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</com.teamcube.rubricscube.Views.CubeLegendView>
