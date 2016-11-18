@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.teamcube.rubricscube.R;
 
+import java.util.Arrays;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -2403,11 +2405,13 @@ public class UserCubeInputView extends LinearLayout{
 
         //If all cubies combined equals 135 then it will show spinner and solve once algorithm is filled in.
         if (allCubiesAdded == 135){
-//            progressSpinner.setVisibility(VISIBLE);
+            progressSpinner.setVisibility(VISIBLE);
 
-            String ans = solution(mixCube, 21, 10, false);
+            String ans = solution(mixCube, 21, 10, true);
+            String[] splitRub = ans.split("\\s+");
+
             Log.d(">>>>>>>>>>>>>>>>>>", mixCube);
-            Log.d(">>>>>>>>>>>>>>>>>>", ans);
+            Log.d(">>>>>>>>>>>>>>>>>>", Arrays.toString(splitRub));
         } else {
             Toast.makeText(context, ("Please Fill in all Cubies" + allCubiesAdded), Toast.LENGTH_LONG).show();
 
