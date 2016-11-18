@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/roundedrectangle.xml",
+        "source": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/src/main/res/drawable-hdpi/roundedrectangle.xml"
+    },
+    {
+        "merged": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/background.jpg",
+        "source": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/src/main/res/drawable-hdpi/background.jpg"
+    },
+    {
+        "merged": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/custom_btn_beige.xml",
+        "source": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/src/main/res/drawable-hdpi/custom_btn_beige.xml"
+    },
+    {
+        "merged": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/wallpaper.jpg",
+        "source": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/src/main/res/drawable-hdpi/wallpaper.jpg"
+    },
+    {
+        "merged": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/custom_btn_orange.xml",
+        "source": "/Users/jessemaynard/Downloads/RubiksCubeSolver-master/app/src/main/res/drawable-hdpi/custom_btn_orange.xml"
+    }
+]
