@@ -17,6 +17,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import static com.teamcube.rubricscube.Utils.Utils.printInstructions;
 import static org.kociemba.twophase.Search.solution;
 
 /**
@@ -2407,11 +2408,12 @@ public class UserCubeInputView extends LinearLayout{
         if (allCubiesAdded == 135){
             progressSpinner.setVisibility(VISIBLE);
 
-            String ans = solution(mixCube, 21, 10, true);
+            String ans = solution(mixCube, 21, 10, false);
             String[] splitRub = ans.split("\\s+");
 
             Log.d(">>>>>>>>>>>>>>>>>>", mixCube);
             Log.d(">>>>>>>>>>>>>>>>>>", Arrays.toString(splitRub));
+
         } else {
             Toast.makeText(context, ("Please Fill in all Cubies" + allCubiesAdded), Toast.LENGTH_LONG).show();
 
