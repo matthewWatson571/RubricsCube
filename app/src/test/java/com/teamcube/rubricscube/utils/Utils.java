@@ -1,8 +1,6 @@
-package com.teamcube.rubricscube.Utils;
+package com.teamcube.rubricscube.utils;
 
 import android.util.Log;
-
-import java.util.Arrays;
 
 /**
  * Created by jessemaynard on 11/21/16.

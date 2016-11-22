@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 
 import com.davidstemmer.flow.plugin.screenplay.ScreenplayDispatcher;
-import com.teamcube.rubricscube.Stages.CubeLegendStage;
+import com.teamcube.rubricscube.Stages.LegendStage;
 import com.teamcube.rubricscube.Stages.UserCubeInputStage;
 
 import butterknife.Bind;
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.legend:
                 History viewLegend = flow.getHistory().buildUpon()
-                        .push(new CubeLegendStage())
+                        .push(new LegendStage())
                         .build();
                 flow.setHistory(viewLegend, Flow.Direction.FORWARD);
                 return true;
