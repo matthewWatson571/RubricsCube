@@ -17,7 +17,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-import static com.teamcube.rubricscube.Utils.Utils.printInstructions;
 import static org.kociemba.twophase.Search.solution;
 
 /**

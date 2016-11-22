@@ -7,17 +7,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.teamcube.rubricscube.Cube.Cube;
+import com.teamcube.rubricscube.Components.Utils;
 import com.teamcube.rubricscube.Cube.Solution;
 import com.teamcube.rubricscube.R;
-import com.teamcube.rubricscube.Utils.Utils;
 
 import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-import static com.teamcube.rubricscube.Utils.Utils.instructionImages;
+import static com.teamcube.rubricscube.Components.Utils.instructionImages;
 
 /**
  * Created by Matthew.Watson on 11/21/16.
@@ -30,7 +29,7 @@ public class SolutionAdapter extends RecyclerView.Adapter<SolutionAdapter.Soluti
 //    ArrayList<Integer> instructionImages;
 
 
-    public SolutionAdapterAdapter(ArrayList<Solution> caughtUsers, Context context) {
+    public SolutionAdapter(ArrayList<Integer> instructionImages, Context context) {
         this.instructionImages = instructionImages;
         this.context = context;
     }
@@ -38,14 +37,13 @@ public class SolutionAdapter extends RecyclerView.Adapter<SolutionAdapter.Soluti
     @Override
     public void onBindViewHolder(SolutionHolder holder, int position) {
         Solution solution = instructionImages.get(position);
-        holder.bindUser(solution);
+        holder.bindMove(solution);
 
     }
 
     @Override
     public int getItemCount() {
-
-        return instructionImages == null ? 0 : instructionImages.size();
+        return instructionImages.size();
     }
 
     @Override
@@ -55,22 +53,21 @@ public class SolutionAdapter extends RecyclerView.Adapter<SolutionAdapter.Soluti
         return new SolutionHolder(inflatedView);
     }
 
-    class CaughtListHolder extends RecyclerView.ViewHolder { //populates view
+    class SolutionHolder extends RecyclerView.ViewHolder { //populates view
 
         @Bind(R.id.solution_image)
         ImageView solutionImage;
 
 
-        public CaughtListHolder(View itemView) {
+        public SolutionHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
 
-        public void bindUser(Solution solution) {
+        public void bindMove() {
             for (int i = 0; i < instructionImages.size(); i++) {
-                solutionImage.setImageDrawable(instructionImages);
+                solutionImage.setImageResource(instructionImages.get(i));
             }
         }
     }
-
 }

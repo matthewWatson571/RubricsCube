@@ -1,5 +1,5 @@
 
-package com.teamcube.rubricscube.Utils;
+package com.teamcube.rubricscube.Components;
 
 import android.graphics.drawable.Drawable;
 import android.util.Log;
@@ -14,14 +14,14 @@ import java.util.ArrayList;
 
 public class Utils {
 
-    public static ArrayList<Drawable> instructionImages = new ArrayList<>();
+    public static ArrayList<Integer> instructionImages = new ArrayList<>();
     public static void printInstructions(String[] splitRub) {
 
         for (int i = 0; i < splitRub.length; i++) {
             Log.d(">>>>>>>>>>>", splitRub[i]);
             switch (splitRub[i]) {
                 case "F":
-                    instructionImages.add(R.drawable.clock_front);
+//                    instructionImages.add(R.drawable.clock_front);
                     break;
                 case "F2":
                     instructionImages.add(R.drawable.clock_front);
