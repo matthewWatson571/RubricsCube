@@ -8,7 +8,6 @@ import android.widget.RelativeLayout;
 
 import com.teamcube.rubricscube.Adapters.LegendDisplayAdapter;
 import com.teamcube.rubricscube.Models.LegendModel;
-import com.teamcube.rubricscube.Utils;
 
 import java.util.ArrayList;
 
@@ -18,14 +17,14 @@ import butterknife.ButterKnife;
  * Created by aaroncampbell on 11/17/16.
  */
 
-public class CubeLegendView extends RelativeLayout {
+public class LegendView extends RelativeLayout {
     private Context context;
     private LegendDisplayAdapter legendDisplayAdapter;
 
 //    @Bind(R.id.recycler_view)
     RecyclerView recyclerView;
 
-    public CubeLegendView(Context context, AttributeSet attrs) {
+    public LegendView(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
     }

@@ -1,7 +1,6 @@
 
 package com.teamcube.rubricscube.Components;
 
-import android.graphics.drawable.Drawable;
 import android.util.Log;
 
 import com.teamcube.rubricscube.R;
