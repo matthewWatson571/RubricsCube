@@ -9,10 +9,19 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.teamcube.rubricscube.R;
+import com.teamcube.rubricscube.RubricsCubeApplication;
+import com.teamcube.rubricscube.Stages.BlueFaceInputStage;
+import com.teamcube.rubricscube.Stages.GreenFaceInputStage;
+import com.teamcube.rubricscube.Stages.OrangeFaceInputStage;
+import com.teamcube.rubricscube.Stages.RedFaceInputStage;
+import com.teamcube.rubricscube.Stages.WhiteFaceInputStage;
+import com.teamcube.rubricscube.Stages.YellowFaceInputStage;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import flow.Flow;
+import flow.History;
 
 /**
  * Created by matthewsturgill on 11/16/16.
@@ -23,148 +32,143 @@ public class UserCubeInputView extends LinearLayout{
     private Context context;
 
     //Orange Face Strings.
-    private String F1 = "";
-    private String F2 = "";
-    private String F3 = "";
-    private String F4 = "";
+    public static String F1;
+    public static String F2;
+    public static String F3;
+    public static String F4;
     //String face center automatically has value F.
-    private String F5 = "F";
-    private String F6 = "";
-    private String F7 = "";
-    private String F8 = "";
-    private String F9 = "";
-
+    public final String F5 = "F";
+    public static String F6;
+    public static String F7;
+    public static String F8;
+    public static String F9;
     //Green Face String.
-    private String R1  = "";
-    private String R2  = "";
-    private String R3  = "";
-    private String R4  = "";
+    public static String R1;
+    public static String R2;
+    public static String R3;
+    public static String R4;
     //String face center automatically has value R.
-    private String R5  = "R";
-    private String R6  = "";
-    private String R7  = "";
-    private String R8  = "";
-    private String R9  = "";
-
+    public final String R5 = "R";
+    public static String R6;
+    public static String R7;
+    public static String R8;
+    public static String R9;
     //White Face String.
-    private String U1 = "";
-    private String U2 = "";
-    private String U3 = "";
-    private String U4 = "";
+    public static String U1;
+    public static String U2;
+    public static String U3;
+    public static String U4;
     //String face center automatically has value U.
-    private String U5 = "U";
-    private String U6 = "";
-    private String U7 = "";
-    private String U8 = "";
-    private String U9 = "";
-
+    public final String U5 = "U";
+    public static String U6;
+    public static String U7;
+    public static String U8;
+    public static String U9;
     //Red Face String.
-    private String B1   = "";
-    private String B2   = "";
-    private String B3   = "";
-    private String B4   = "";
+    public static String B1;
+    public static String B2;
+    public static String B3;
+    public static String B4;
     //String face center automatically has value B.
-    private String B5   = "B";
-    private String B6   = "";
-    private String B7   = "";
-    private String B8   = "";
-    private String B9   = "";
-
+    public final String B5 = "B";
+    public static String B6;
+    public static String B7;
+    public static String B8;
+    public static String B9;
     //Blue face String.
-    private String L1 = "";
-    private String L2 = "";;
-    private String L3 = "";
-    private String L4 = "";
+    public static String L1;
+    public static String L2;
+    public static String L3;
+    public static String L4;
     //String face center automatically has value L.
-    private String L5 = "L";
-    private String L6 = "";
-    private String L7 = "";
-    private String L8 = "";
-    private String L9 = "";
-
+    public final String L5 = "L";
+    public static String L6;
+    public static String L7;
+    public static String L8;
+    public static String L9;
     //Yellow face String.
-    private String D1 = "";
-    private String D2 = "";
-    private String D3 = "";
-    private String D4 = "";
+    public static String D1;
+    public static String D2;
+    public static String D3;
+    public static String D4;
     //String face center automatically has vlue D.
-    private String D5 = "D";
-    private String D6 = "";
-    private String D7 = "";
-    private String D8 = "";
-    private String D9 = "";
+    public final String D5 = "D";
+    public static String D6;
+    public static String D7;
+    public static String D8;
+    public static String D9;
 
     //Orange integers. Orange color value = 0
-    private int orange0Count = -1;
-    private int orange1Count = -1;
-    private int orange2Count = -1;
-    private int orange3Count = -1;
+    public static int orange0Count = -1;
+    public static int orange1Count = -1;
+    public static int orange2Count = -1;
+    public static int orange3Count = -1;
     //Int representing center square is already set to color value.
-    private int orange4Count =  0;
-    private int orange5Count = -1;
-    private int orange6Count = -1;
-    private int orange7Count = -1;
-    private int orange8Count = -1;
+    public final int orange4Count =  0;
+    public static int orange5Count = -1;
+    public static int orange6Count = -1;
+    public static int orange7Count = -1;
+    public static int orange8Count = -1;
 
     //Green integers. Green color value = 1
-    private int green9Count  = -1;
-    private int green10Count = -1;
-    private int green11Count = -1;
-    private int green12Count = -1;
+    public static int green9Count  = -1;
+    public static int green10Count = -1;
+    public static int green11Count = -1;
+    public static int green12Count = -1;
     //Int representing center square is already set to color value.
-    private int green13Count =  1;
-    private int green14Count = -1;
-    private int green15Count = -1;
-    private int green16Count = -1;
-    private int green17Count = -1;
+    public final int green13Count =  1;
+    public static int green14Count = -1;
+    public static int green15Count = -1;
+    public static int green16Count = -1;
+    public static int green17Count = -1;
 
     //White integers. White color value = 2
-    private int white18Count = -1;
-    private int white19Count = -1;
-    private int white20Count = -1;
-    private int white21Count = -1;
+    public static int white18Count = -1;
+    public static int white19Count = -1;
+    public static int white20Count = -1;
+    public static int white21Count = -1;
     //Int representing center square is already set to color value.
-    private int white22Count =  2;
-    private int white23Count = -1;
-    private int white24Count = -1;
-    private int white25Count = -1;
-    private int white26Count = -1;
+    public final int white22Count =  2;
+    public static int white23Count = -1;
+    public static int white24Count = -1;
+    public static int white25Count = -1;
+    public static int white26Count = -1;
 
     //Red integers. Red color value = 3
-    private int red27Count   = -1;
-    private int red28Count   = -1;
-    private int red29Count   = -1;
-    private int red30Count   = -1;
+    public static int red27Count   = -1;
+    public static int red28Count   = -1;
+    public static int red29Count   = -1;
+    public static int red30Count   = -1;
     //Int representing center square is already set to color value.
-    private int red31Count   =  3;
-    private int red32Count   = -1;
-    private int red33Count   = -1;
-    private int red34Count   = -1;
-    private int red35Count   = -1;
+    public final int red31Count   =  3;
+    public static int red32Count   = -1;
+    public static int red33Count   = -1;
+    public static int red34Count   = -1;
+    public static int red35Count   = -1;
 
     //Blue integers. Blue color value = 4
-    private int blue36Count  = -1;
-    private int blue37Count  = -1;
-    private int blue38Count  = -1;
-    private int blue39Count  = -1;
+    public static int blue36Count  = -1;
+    public static int blue37Count  = -1;
+    public static int blue38Count  = -1;
+    public static int blue39Count  = -1;
     //Int representing center square is already set to color value.
-    private int blue40Count  =  4;
-    private int blue41Count  = -1;
-    private int blue42Count  = -1;
-    private int blue43Count  = -1;
-    private int blue44Count  = -1;
+    public final int blue40Count  =  4;
+    public static int blue41Count  = -1;
+    public static int blue42Count  = -1;
+    public static int blue43Count  = -1;
+    public static int blue44Count  = -1;
 
     //Yellow integers. Yellow color value = 5
-    private int yellow45Count =-1;
-    private int yellow46Count =-1;
-    private int yellow47Count =-1;
-    private int yellow48Count =-1;
+    public static int yellow45Count =-1;
+    public static int yellow46Count =-1;
+    public static int yellow47Count =-1;
+    public static int yellow48Count =-1;
     //Int representing center square is already set to color value.
-    private int yellow49Count = 5;
-    private int yellow50Count =-1;
-    private int yellow51Count =-1;
-    private int yellow52Count =-1;
-    private int yellow53Count =-1;
+    public final int yellow49Count = 5;
+    public static int yellow50Count =-1;
+    public static int yellow51Count =-1;
+    public static int yellow52Count =-1;
+    public static int yellow53Count =-1;
     //Integer to hold sum of all cube values.
     private int allCubiesAdded;
 
@@ -353,15 +357,1415 @@ public class UserCubeInputView extends LinearLayout{
 //    @Bind(R.id.helpButton)
 //    Button helpButton;
 
+
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
         ButterKnife.bind(this);
+
+        //Orange on inflate populate from zoom view
+        switch (orange0Count){
+            //orange
+            case 0: orange0.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                F1 = "F";
+                break;
+            //green
+            case 1: orange0.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                F1 = "R";
+                break;
+            //white
+            case 2: orange0.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                F1 = "U";
+                break;
+            //red
+            case 3: orange0.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                F1 = "B";
+                break;
+            //blue
+            case 4: orange0.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                F1 = "L";
+                break;
+            //yellow
+            case 5: orange0.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                F1 = "D";
+                break;
+            default:orange0Count = -1;
+                orange0.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                F1 = "";
+        }
+        switch (orange1Count){
+            //orange
+            case 0: orange1.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                F2 = "F";
+                break;
+            //green
+            case 1: orange1.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                F2 = "R";
+                break;
+            //white
+            case 2: orange1.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                F2 = "U";
+                break;
+            //red
+            case 3: orange1.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                F2 = "B";
+                break;
+            //blue
+            case 4: orange1.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                F2 = "L";
+                break;
+            //yellow
+            case 5: orange1.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                F2 = "D";
+                break;
+            default:orange1Count = -1;
+                orange1.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                F2 = "";
+        }
+        switch (orange2Count){
+            //orange
+            case 0: orange2.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                F3 = "F";
+                break;
+            //green
+            case 1: orange2.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                F3 = "R";
+                break;
+            //white
+            case 2: orange2.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                F3 = "U";
+                break;
+            //red
+            case 3: orange2.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                F3 = "B";
+                break;
+            //blue
+            case 4: orange2.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                F3 = "L";
+                break;
+            //yellow
+            case 5: orange2.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                F3 = "D";
+                break;
+            default:orange2Count = -1;
+                orange2.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                F3 = "";
+        }
+        switch (orange3Count){
+            //orange
+            case 0: orange3.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                F4 = "F";
+                break;
+            //green
+            case 1: orange3.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                F4 = "R";
+                break;
+            //white
+            case 2: orange3.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                F4 = "U";
+                break;
+            //red
+            case 3: orange3.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                F4 = "B";
+                break;
+            //blue
+            case 4: orange3.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                F4 = "L";
+                break;
+            //yellow
+            case 5: orange3.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                F4 = "D";
+                break;
+            default:orange3Count = -1;
+                orange3.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                F4 = "";
+        }
+        switch (orange5Count){
+            //orange
+            case 0: orange5.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                F6 = "F";
+                break;
+            //green
+            case 1: orange5.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                F6 = "R";
+                break;
+            //white
+            case 2: orange5.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                F6 = "U";
+                break;
+            //red
+            case 3: orange5.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                F6 = "B";
+                break;
+            //blue
+            case 4: orange5.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                F6 = "L";
+                break;
+            //yellow
+            case 5: orange5.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                F6 = "D";
+                break;
+            default:orange5Count = -1;
+                orange5.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                F6 = "";
+        }
+        switch (orange6Count){
+            //orange
+            case 0: orange6.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                F7 = "F";
+                break;
+            //green
+            case 1: orange6.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                F7 = "R";
+                break;
+            //white
+            case 2: orange6.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                F7 = "U";
+                break;
+            //red
+            case 3: orange6.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                F7 = "B";
+                break;
+            //blue
+            case 4: orange6.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                F7 = "L";
+                break;
+            //yellow
+            case 5: orange6.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                F7 = "D";
+                break;
+            default:orange6Count = -1;
+                orange6.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                F7 = "";
+        }
+        switch (orange7Count){
+            //orange
+            case 0: orange7.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                F8 = "F";
+                break;
+            //green
+            case 1: orange7.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                F8 = "R";
+                break;
+            //white
+            case 2: orange7.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                F8 = "U";
+                break;
+            //red
+            case 3: orange7.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                F8 = "B";
+                break;
+            //blue
+            case 4: orange7.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                F8 = "L";
+                break;
+            //yellow
+            case 5: orange7.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                F8 = "D";
+                break;
+            default:orange7Count = -1;
+                orange7.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                F8 = "";
+        }
+        switch (orange8Count){
+            //orange
+            case 0: orange8.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                F9 = "F";
+                break;
+            //green
+            case 1: orange8.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                F9 = "R";
+                break;
+            //white
+            case 2: orange8.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                F9 = "U";
+                break;
+            //red
+            case 3: orange8.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                F9 = "B";
+                break;
+            //blue
+            case 4: orange8.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                F9 = "L";
+                break;
+            //yellow
+            case 5: orange8.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                F9 = "D";
+                break;
+            default:orange8Count = -1;
+                orange8.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                F9 = "";
+        }
+        switch (green9Count){
+            //orange
+            case 0: green9.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                R1 = "F";
+                break;
+            //green
+            case 1: green9.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                R1 = "R";
+                break;
+            //white
+            case 2: green9.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                R1 = "U";
+                break;
+            //red
+            case 3: green9.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                R1 = "B";
+                break;
+            //blue
+            case 4: green9.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                R1 = "L";
+                break;
+            //yellow
+            case 5: green9.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                R1 = "D";
+                break;
+            default:green9Count = -1;
+                green9.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                R1 = "";
+        }
+        switch (green10Count){
+            //orange
+            case 0: green10.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                R2 = "F";
+                break;
+            //green
+            case 1: green10.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                R2 = "R";
+                break;
+            //white
+            case 2: green10.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                R2 = "U";
+                break;
+            //red
+            case 3: green10.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                R2 = "B";
+                break;
+            //blue
+            case 4: green10.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                R2 = "L";
+                break;
+            //yellow
+            case 5: green10.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                R2 = "D";
+                break;
+            default:green10Count = -1;
+                green10.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                R2 = "";
+        }
+        switch (green11Count){
+            //orange
+            case 0: green11.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                R3 = "F";
+                break;
+            //green
+            case 1: green11.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                R3 = "R";
+                break;
+            //white
+            case 2: green11.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                R3 = "U";
+                break;
+            //red
+            case 3: green11.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                R3 = "B";
+                break;
+            //blue
+            case 4: green11.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                R3 = "L";
+                break;
+            //yellow
+            case 5: green11.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                R3 = "D";
+                break;
+            default:green11Count = -1;
+                green11.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                R3 = "";
+        }
+        switch (green12Count){
+            //orange
+            case 0: green12.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                R4 = "F";
+                break;
+            //green
+            case 1: green12.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                R4 = "R";
+                break;
+            //white
+            case 2: green12.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                R4 = "U";
+                break;
+            //red
+            case 3: green12.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                R4 = "B";
+                break;
+            //blue
+            case 4: green12.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                R4 = "L";
+                break;
+            //yellow
+            case 5: green12.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                R4 = "D";
+                break;
+            default:green12Count = -1;
+                green12.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                R4 = "";
+        }
+        switch (green14Count){
+            //orange
+            case 0: green14.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                R6 = "F";
+                break;
+            //green
+            case 1: green14.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                R6 = "R";
+                break;
+            //white
+            case 2: green14.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                R6 = "U";
+                break;
+            //red
+            case 3: green14.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                R6 = "B";
+                break;
+            //blue
+            case 4: green14.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                R6 = "L";
+                break;
+            //yellow
+            case 5: green14.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                R6 = "D";
+                break;
+            default:green14Count = -1;
+                green14.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                R6 = "";
+        }
+        switch (green15Count){
+            //orange
+            case 0: green15.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                R7 = "F";
+                break;
+            //green
+            case 1: green15.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                R7 = "R";
+                break;
+            //white
+            case 2: green15.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                R7 = "U";
+                break;
+            //red
+            case 3: green15.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                R7 = "B";
+                break;
+            //blue
+            case 4: green15.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                R7 = "L";
+                break;
+            //yellow
+            case 5: green15.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                R7 = "D";
+                break;
+            default:green15Count = -1;
+                green15.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                R7 = "";
+        }
+        switch (green16Count){
+            //orange
+            case 0: green16.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                R8 = "F";
+                break;
+            //green
+            case 1: green16.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                R8 = "R";
+                break;
+            //white
+            case 2: green16.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                R8 = "U";
+                break;
+            //red
+            case 3: green16.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                R8 = "B";
+                break;
+            //blue
+            case 4: green16.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                R8 = "L";
+                break;
+            //yellow
+            case 5: green16.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                R8 = "D";
+                break;
+            default:green16Count = -1;
+                green16.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                R8 = "";
+        }
+        switch (green17Count){
+            //orange
+            case 0: green17.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                R9 = "F";
+                break;
+            //green
+            case 1: green17.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                R9 = "R";
+                break;
+            //white
+            case 2: green17.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                R9 = "U";
+                break;
+            //red
+            case 3: green17.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                R9 = "B";
+                break;
+            //blue
+            case 4: green17.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                R9 = "L";
+                break;
+            //yellow
+            case 5: green17.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                R9 = "D";
+                break;
+            default:green17Count = -1;
+                green17.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                R9 = "";
+        }
+        //White on inflate to populate from other View
+        switch (white18Count){
+            //orange
+            case 0: white18.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                U1 = "F";
+                break;
+            //green
+            case 1: white18.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                U1 = "R";
+                break;
+            //white
+            case 2: white18.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                U1 = "U";
+                break;
+            //red
+            case 3: white18.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                U1 = "B";
+                break;
+            //blue
+            case 4: white18.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                U1 = "L";
+                break;
+            //yellow
+            case 5: white18.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                U1 = "D";
+                break;
+            default:white18Count = -1;
+                white18.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                U1 = "";
+        }
+        switch (white19Count){
+            //orange
+            case 0: white19.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                U2 = "F";
+                break;
+            //green
+            case 1: white19.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                U2 = "R";
+                break;
+            //white
+            case 2: white19.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                U2 = "U";
+                break;
+            //red
+            case 3: white19.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                U2 = "B";
+                break;
+            //blue
+            case 4: white19.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                U2 = "L";
+                break;
+            //yellow
+            case 5: white19.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                U2 = "D";
+                break;
+            default:white19Count = -1;
+                white19.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                U2 = "";
+        }
+        switch (white20Count){
+            //orange
+            case 0: white20.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                U3 = "F";
+                break;
+            //green
+            case 1: white20.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                U3 = "R";
+                break;
+            //white
+            case 2: white20.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                U3 = "U";
+                break;
+            //red
+            case 3: white20.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                U3 = "B";
+                break;
+            //blue
+            case 4: white20.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                U3 = "L";
+                break;
+            //yellow
+            case 5: white20.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                U3 = "D";
+                break;
+            default:white20Count = -1;
+                white20.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                U3 = "";
+        }
+        switch (white21Count){
+            //orange
+            case 0: white21.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                U4 = "F";
+                break;
+            //green
+            case 1: white21.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                U4 = "R";
+                break;
+            //white
+            case 2: white21.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                U4 = "U";
+                break;
+            //red
+            case 3: white21.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                U4 = "B";
+                break;
+            //blue
+            case 4: white21.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                U4 = "L";
+                break;
+            //yellow
+            case 5: white21.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                U4 = "D";
+                break;
+            default:white21Count = -1;
+                white21.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                U4 = "";
+        }
+        switch (white23Count){
+            //orange
+            case 0: white23.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                U6 = "F";
+                break;
+            //green
+            case 1: white23.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                U6 = "R";
+                break;
+            //white
+            case 2: white23.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                U6 = "U";
+                break;
+            //red
+            case 3: white23.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                U6 = "B";
+                break;
+            //blue
+            case 4: white23.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                U6 = "L";
+                break;
+            //yellow
+            case 5: white23.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                U6 = "D";
+                break;
+            default:white23Count = -1;
+                white23.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                U6 = "";
+        }
+        switch (white24Count){
+            //orange
+            case 0: white24.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                U7 = "F";
+                break;
+            //green
+            case 1: white24.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                U7 = "R";
+                break;
+            //white
+            case 2: white24.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                U7 = "U";
+                break;
+            //red
+            case 3: white24.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                U7 = "B";
+                break;
+            //blue
+            case 4: white24.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                U7 = "L";
+                break;
+            //yellow
+            case 5: white24.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                U7 = "D";
+                break;
+            default:white24Count = -1;
+                white24.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                U7 = "";
+        }
+        switch (white25Count){
+            //orange
+            case 0: white25.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                U8 = "F";
+                break;
+            //green
+            case 1: white25.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                U8 = "R";
+                break;
+            //white
+            case 2: white25.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                U8 = "U";
+                break;
+            //red
+            case 3: white25.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                U8 = "B";
+                break;
+            //blue
+            case 4: white25.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                U8 = "L";
+                break;
+            //yellow
+            case 5: white25.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                U8 = "D";
+                break;
+            default:white25Count = -1;
+                white25.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                U8 = "";
+        }
+        switch (white26Count){
+            //orange
+            case 0: white26.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                U9 = "F";
+                break;
+            //green
+            case 1: white26.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                U9 = "R";
+                break;
+            //white
+            case 2: white26.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                U9 = "U";
+                break;
+            //red
+            case 3: white26.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                U9 = "B";
+                break;
+            //blue
+            case 4: white26.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                U9 = "L";
+                break;
+            //yellow
+            case 5: white26.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                U9 = "D";
+                break;
+            default:white26Count = -1;
+                white26.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                U9 = "";
+        }
+        //Red on inflate to populate from zoom view
+        switch (red27Count){
+            //orange
+            case 0: red27.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                B1 = "F";
+                break;
+            //green
+            case 1: red27.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                B1 = "R";
+                break;
+            //white
+            case 2: red27.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                B1 = "U";
+                break;
+            //red
+            case 3: red27.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                B1 = "B";
+                break;
+            //blue
+            case 4: red27.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                B1 = "L";
+                break;
+            //yellow
+            case 5: red27.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                B1 = "D";
+                break;
+            default:red27Count = -1;
+                red27.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                B1 = "";
+        }
+        switch (red28Count){
+            //orange
+            case 0: red28.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                B2 = "F";
+                break;
+            //green
+            case 1: red28.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                B2 = "R";
+                break;
+            //white
+            case 2: red28.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                B2 = "U";
+                break;
+            //red
+            case 3: red28.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                B2 = "B";
+                break;
+            //blue
+            case 4: red28.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                B2 = "L";
+                break;
+            //yellow
+            case 5: red28.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                B2 = "D";
+                break;
+            default:red28Count = -1;
+                red28.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                B2 = "";
+        }
+        switch (red29Count){
+            //orange
+            case 0: red29.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                B3 = "F";
+                break;
+            //green
+            case 1: red29.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                B3 = "R";
+                break;
+            //white
+            case 2: red29.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                B3 = "U";
+                break;
+            //red
+            case 3: red29.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                B3 = "B";
+                break;
+            //blue
+            case 4: red29.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                B3 = "L";
+                break;
+            //yellow
+            case 5: red29.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                B3 = "D";
+                break;
+            default:red29Count = -1;
+                red29.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                B3 = "";
+        }
+        switch (red30Count){
+            //orange
+            case 0: red30.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                B4 = "F";
+                break;
+            //green
+            case 1: red30.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                B4 = "R";
+                break;
+            //white
+            case 2: red30.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                B4 = "U";
+                break;
+            //red
+            case 3: red30.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                B4 = "B";
+                break;
+            //blue
+            case 4: red30.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                B4 = "L";
+                break;
+            //yellow
+            case 5: red30.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                B4 = "D";
+                break;
+            default:red30Count = -1;
+                red30.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                B4 = "";
+        }
+        switch (red32Count){
+            //orange
+            case 0: red32.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                B6 = "F";
+                break;
+            //green
+            case 1: red32.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                B6 = "R";
+                break;
+            //white
+            case 2: red32.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                B6 = "U";
+                break;
+            //red
+            case 3: red32.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                B6 = "B";
+                break;
+            //blue
+            case 4: red32.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                B6 = "L";
+                break;
+            //yellow
+            case 5: red32.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                B6 = "D";
+                break;
+            default:red32Count = -1;
+                red32.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                B6 = "";
+        }
+        switch (red33Count){
+            //orange
+            case 0: red33.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                B7 = "F";
+                break;
+            //green
+            case 1: red33.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                B7 = "R";
+                break;
+            //white
+            case 2: red33.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                B7 = "U";
+                break;
+            //red
+            case 3: red33.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                B7 = "B";
+                break;
+            //blue
+            case 4: red33.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                B7 = "L";
+                break;
+            //yellow
+            case 5: red33.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                B7 = "D";
+                break;
+            default:red33Count = -1;
+                red33.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                B7 = "";
+        }
+        switch (red34Count){
+            //orange
+            case 0: red34.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                B8 = "F";
+                break;
+            //green
+            case 1: red34.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                B8 = "R";
+                break;
+            //white
+            case 2: red34.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                B8 = "U";
+                break;
+            //red
+            case 3: red34.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                B8 = "B";
+                break;
+            //blue
+            case 4: red34.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                B8 = "L";
+                break;
+            //yellow
+            case 5: red34.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                B8 = "D";
+                break;
+            default:red34Count = -1;
+                red34.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                B8 = "";
+        }
+        switch (red35Count){
+            //orange
+            case 0: red35.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                B9 = "F";
+                break;
+            //green
+            case 1: red35.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                B9 = "R";
+                break;
+            //white
+            case 2: red35.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                B9 = "U";
+                break;
+            //red
+            case 3: red35.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                B9 = "B";
+                break;
+            //blue
+            case 4: red35.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                B9 = "L";
+                break;
+            //yellow
+            case 5: red35.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                B9 = "D";
+                break;
+            default:red35Count = -1;
+                red35.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                B9 = "";
+        }
+        //Blue when inflates if zoomed view has any value will populate here
+        switch (blue36Count){
+            //orange
+            case 0: blue36.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                L1 = "F";
+                break;
+            //green
+            case 1: blue36.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                L1 = "R";
+                break;
+            //white
+            case 2: blue36.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                L1 = "U";
+                break;
+            //red
+            case 3: blue36.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                L1 = "B";
+                break;
+            //blue
+            case 4: blue36.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                L1 = "L";
+                break;
+            //yellow
+            case 5: blue36.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                L1 = "D";
+                break;
+            default:blue36Count = -1;
+                blue36.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                L1 = "";
+        }
+        switch (blue37Count){
+            //orange
+            case 0: blue37.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                L2 = "F";
+                break;
+            //green
+            case 1: blue37.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                L2 = "R";
+                break;
+            //white
+            case 2: blue37.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                L2 = "U";
+                break;
+            //red
+            case 3: blue37.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                L2 = "B";
+                break;
+            //blue
+            case 4: blue37.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                L2 = "L";
+                break;
+            //yellow
+            case 5: blue37.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                L2 = "D";
+                break;
+            default:blue37Count = -1;
+                blue37.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                L2 = "";
+        }
+        switch (blue38Count){
+            //orange
+            case 0: blue38.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                L3 = "F";
+                break;
+            //green
+            case 1: blue38.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                L3 = "R";
+                break;
+            //white
+            case 2: blue38.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                L3 = "U";
+                break;
+            //red
+            case 3: blue38.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                L3 = "B";
+                break;
+            //blue
+            case 4: blue38.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                L3 = "L";
+                break;
+            //yellow
+            case 5: blue38.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                L3 = "D";
+                break;
+            default:blue38Count = -1;
+                blue38.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                L3 = "";
+        }
+        switch (blue39Count){
+            //orange
+            case 0: blue39.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                L4 = "F";
+                break;
+            //green
+            case 1: blue39.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                L4 = "R";
+                break;
+            //white
+            case 2: blue39.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                L4 = "U";
+                break;
+            //red
+            case 3: blue39.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                L4 = "B";
+                break;
+            //blue
+            case 4: blue39.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                L4 = "L";
+                break;
+            //yellow
+            case 5: blue39.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                L4 = "D";
+                break;
+            default:blue39Count = -1;
+                blue39.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                L4 = "";
+        }
+        switch (blue41Count){
+            //orange
+            case 0: blue41.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                L6 = "F";
+                break;
+            //green
+            case 1: blue41.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                L6 = "R";
+                break;
+            //white
+            case 2: blue41.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                L6 = "U";
+                break;
+            //red
+            case 3: blue41.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                L6 = "B";
+                break;
+            //blue
+            case 4: blue41.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                L6 = "L";
+                break;
+            //yellow
+            case 5: blue41.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                L6 = "D";
+                break;
+            default:blue41Count = -1;
+                blue41.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                L6 = "";
+        }
+        switch (blue42Count){
+            //orange
+            case 0: blue42.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                L7 = "F";
+                break;
+            //green
+            case 1: blue42.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                L7 = "R";
+                break;
+            //white
+            case 2: blue42.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                L7 = "U";
+                break;
+            //red
+            case 3: blue42.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                L7 = "B";
+                break;
+            //blue
+            case 4: blue42.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                L7 = "L";
+                break;
+            //yellow
+            case 5: blue42.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                L7 = "D";
+                break;
+            default:blue42Count = -1;
+                blue42.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                L7 = "";
+        }
+        switch (blue43Count){
+            //orange
+            case 0: blue43.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                L8 = "F";
+                break;
+            //green
+            case 1: blue43.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                L8 = "R";
+                break;
+            //white
+            case 2: blue43.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                L8 = "U";
+                break;
+            //red
+            case 3: blue43.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                L8 = "B";
+                break;
+            //blue
+            case 4: blue43.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                L8 = "L";
+                break;
+            //yellow
+            case 5: blue43.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                L8 = "D";
+                break;
+            default:blue43Count = -1;
+                blue43.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                L8 = "";
+        }
+        switch (blue44Count){
+            //orange
+            case 0: blue44.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                L9 = "F";
+                break;
+            //green
+            case 1: blue44.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                L9 = "R";
+                break;
+            //white
+            case 2: blue44.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                L9 = "U";
+                break;
+            //red
+            case 3: blue44.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                L9 = "B";
+                break;
+            //blue
+            case 4: blue44.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                L9 = "L";
+                break;
+            //yellow
+            case 5: blue44.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                L9 = "D";
+                break;
+            default:blue44Count = -1;
+                blue44.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                L9 = "";
+        }
+        //Yellow when inflates if zoomed view has any value will populate here
+        switch (yellow45Count){
+            //orange
+            case 0: yellow45.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                D1 = "F";
+                break;
+            //green
+            case 1: yellow45.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                D1 = "R";
+                break;
+            //white
+            case 2: yellow45.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                D1 = "U";
+                break;
+            //red
+            case 3: yellow45.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                D1 = "B";
+                break;
+            //blue
+            case 4: yellow45.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                D1 = "L";
+                break;
+            //yellow
+            case 5: yellow45.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                D1 = "D";
+                break;
+            default:yellow45Count = -1;
+                yellow45.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                D1 = "";
+        }
+        switch (yellow46Count){
+            //orange
+            case 0: yellow46.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                D2 = "F";
+                break;
+            //green
+            case 1: yellow46.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                D2 = "R";
+                break;
+            //white
+            case 2: yellow46.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                D2 = "U";
+                break;
+            //red
+            case 3: yellow46.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                D2 = "B";
+                break;
+            //blue
+            case 4: yellow46.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                D2 = "L";
+                break;
+            //yellow
+            case 5: yellow46.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                D2 = "D";
+                break;
+            default:yellow46Count = -1;
+                yellow46.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                D2 = "";
+        }
+        switch (yellow47Count){
+            //orange
+            case 0: yellow47.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                D3 = "F";
+                break;
+            //green
+            case 1: yellow47.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                D3 = "R";
+                break;
+            //white
+            case 2: yellow47.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                D3 = "U";
+                break;
+            //red
+            case 3: yellow47.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                D3 = "B";
+                break;
+            //blue
+            case 4: yellow47.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                D3 = "L";
+                break;
+            //yellow
+            case 5: yellow47.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                D3 = "D";
+                break;
+            default:yellow47Count = -1;
+                yellow47.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                D3 = "";
+        }
+        switch (yellow48Count){
+            //orange
+            case 0: yellow48.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                D4 = "F";
+                break;
+            //green
+            case 1: yellow48.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                D4 = "R";
+                break;
+            //white
+            case 2: yellow48.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                D4 = "U";
+                break;
+            //red
+            case 3: yellow48.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                D4 = "B";
+                break;
+            //blue
+            case 4: yellow48.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                D4 = "L";
+                break;
+            //yellow
+            case 5: yellow48.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                D4 = "D";
+                break;
+            default:yellow48Count = -1;
+                yellow48.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                D4 = "";
+        }
+        switch (yellow50Count){
+            //orange
+            case 0: yellow50.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                D6 = "F";
+                break;
+            //green
+            case 1: yellow50.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                D6 = "R";
+                break;
+            //white
+            case 2: yellow50.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                D6 = "U";
+                break;
+            //red
+            case 3: yellow50.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                D6 = "B";
+                break;
+            //blue
+            case 4: yellow50.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                D6 = "L";
+                break;
+            //yellow
+            case 5: yellow50.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                D6 = "D";
+                break;
+            default:yellow50Count = -1;
+                yellow50.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                D6 = "";
+        }
+        switch (yellow51Count){
+            //orange
+            case 0: yellow51.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                D7 = "F";
+                break;
+            //green
+            case 1: yellow51.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                D7 = "R";
+                break;
+            //white
+            case 2: yellow51.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                D7 = "U";
+                break;
+            //red
+            case 3: yellow51.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                D7 = "B";
+                break;
+            //blue
+            case 4: yellow51.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                D7 = "L";
+                break;
+            //yellow
+            case 5: yellow51.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                D7 = "D";
+                break;
+            default:yellow51Count = -1;
+                yellow51.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                D7 = "";
+        }
+        switch (yellow52Count){
+            //orange
+            case 0: yellow52.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                D8 = "F";
+                break;
+            //green
+            case 1: yellow52.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                D8 = "R";
+                break;
+            //white
+            case 2: yellow52.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                D8 = "U";
+                break;
+            //red
+            case 3: yellow52.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                D8 = "B";
+                break;
+            //blue
+            case 4: yellow52.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                D8 = "L";
+                break;
+            //yellow
+            case 5: yellow52.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                D8 = "D";
+                break;
+            default:yellow52Count = -1;
+                yellow52.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                D8 = "";
+        }
+        switch (yellow53Count){
+            //orange
+            case 0: yellow53.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                D9 = "F";
+                break;
+            //green
+            case 1: yellow53.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                D9 = "R";
+                break;
+            //white
+            case 2: yellow53.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                D9 = "U";
+                break;
+            //red
+            case 3: yellow53.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                D9 = "B";
+                break;
+            //blue
+            case 4: yellow53.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                D9 = "L";
+                break;
+            //yellow
+            case 5: yellow53.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                D9 = "D";
+                break;
+            default:yellow53Count = -1;
+                yellow53.setBackgroundColor(Color.argb(255, 191, 191, 191));
+                D9 = "";
+        }
     }
 
     public UserCubeInputView(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
+
     }
 
     //Solve button and reset click
@@ -424,10 +1828,10 @@ public class UserCubeInputView extends LinearLayout{
 
         //If all cubies combined equals 135 then it will show spinner and solve once algorithm is filled in.
         if (allCubiesAdded == 135){
-            progressSpinner.setVisibility(VISIBLE);
+            Toast.makeText(context, "It works", Toast.LENGTH_SHORT).show();
 
         } else {
-            Toast.makeText(context, ("Please Fill in all Cubies" + allCubiesAdded), Toast.LENGTH_LONG).show();
+            Toast.makeText(context, ("Please Fill in Cube arrangement correctly"), Toast.LENGTH_LONG).show();
 
         }
 
@@ -446,8 +1850,6 @@ public class UserCubeInputView extends LinearLayout{
         orange3Count = -1;
         orange3.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
-        orange4Count =  0;
-
         orange5Count = -1;
         orange5.setBackgroundColor(Color.argb(255, 191, 191, 191));
         orange6Count = -1;
@@ -456,7 +1858,6 @@ public class UserCubeInputView extends LinearLayout{
         orange7.setBackgroundColor(Color.argb(255, 191, 191, 191));
         orange8Count = -1;
         orange8.setBackgroundColor(Color.argb(255, 191, 191, 191));
-
         //Green integers. Green color value = 1
         green9Count  = -1;
         green9.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -467,8 +1868,6 @@ public class UserCubeInputView extends LinearLayout{
         green12Count = -1;
         green12.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
-        green13Count =  1;
-
         green14Count = -1;
         green14.setBackgroundColor(Color.argb(255, 191, 191, 191));
         green15Count = -1;
@@ -477,7 +1876,6 @@ public class UserCubeInputView extends LinearLayout{
         green16.setBackgroundColor(Color.argb(255, 191, 191, 191));
         green17Count = -1;
         green17.setBackgroundColor(Color.argb(255, 191, 191, 191));
-
         //White integers. White color value = 2
         white18Count = -1;
         white18.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -488,8 +1886,6 @@ public class UserCubeInputView extends LinearLayout{
         white21Count = -1;
         white21.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
-        white22Count =  2;
-
         white23Count = -1;
         white23.setBackgroundColor(Color.argb(255, 191, 191, 191));
         white24Count = -1;
@@ -498,7 +1894,6 @@ public class UserCubeInputView extends LinearLayout{
         white25.setBackgroundColor(Color.argb(255, 191, 191, 191));
         white26Count = -1;
         white26.setBackgroundColor(Color.argb(255, 191, 191, 191));
-
         //Red integers. Red color value = 3
         red27Count   = -1;
         red27.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -509,8 +1904,6 @@ public class UserCubeInputView extends LinearLayout{
         red30Count   = -1;
         red30.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
-        red31Count   =  3;
-
         red32Count   = -1;
         red32.setBackgroundColor(Color.argb(255, 191, 191, 191));
         red33Count   = -1;
@@ -519,7 +1912,6 @@ public class UserCubeInputView extends LinearLayout{
         red34.setBackgroundColor(Color.argb(255, 191, 191, 191));
         red35Count   = -1;
         red35.setBackgroundColor(Color.argb(255, 191, 191, 191));
-
         //Blue integers. Blue color value = 4
         blue36Count  = -1;
         blue36.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -530,8 +1922,6 @@ public class UserCubeInputView extends LinearLayout{
         blue39Count  = -1;
         blue39.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
-        blue40Count  =  4;
-
         blue41Count  = -1;
         blue41.setBackgroundColor(Color.argb(255, 191, 191, 191));
         blue42Count  = -1;
@@ -540,7 +1930,6 @@ public class UserCubeInputView extends LinearLayout{
         blue43.setBackgroundColor(Color.argb(255, 191, 191, 191));
         blue44Count  = -1;
         blue44.setBackgroundColor(Color.argb(255, 191, 191, 191));
-
         //Yellow integers. Yellow color value = 5
         yellow45Count =-1;
         yellow45.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -551,8 +1940,6 @@ public class UserCubeInputView extends LinearLayout{
         yellow48Count =-1;
         yellow48.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
-        yellow49Count = 5;
-
         yellow50Count =-1;
         yellow50.setBackgroundColor(Color.argb(255, 191, 191, 191));
         yellow51Count =-1;
@@ -568,7 +1955,6 @@ public class UserCubeInputView extends LinearLayout{
         F3 = "";
         F4 = "";
         //String face center automatically has value F.
-        F5 = "F";
         F6 = "";
         F7 = "";
         F8 = "";
@@ -580,7 +1966,6 @@ public class UserCubeInputView extends LinearLayout{
         R3  = "";
         R4  = "";
         //String face center automatically has value R.
-        R5  = "R";
         R6  = "";
         R7  = "";
         R8  = "";
@@ -592,7 +1977,6 @@ public class UserCubeInputView extends LinearLayout{
         U3 = "";
         U4 = "";
         //String face center automatically has value U.
-        U5 = "U";
         U6 = "";
         U7 = "";
         U8 = "";
@@ -604,7 +1988,6 @@ public class UserCubeInputView extends LinearLayout{
         B3   = "";
         B4   = "";
         //String face center automatically has value B.
-        B5   = "B";
         B6   = "";
         B7   = "";
         B8   = "";
@@ -616,7 +1999,6 @@ public class UserCubeInputView extends LinearLayout{
         L3 = "";
         L4 = "";
         //String face center automatically has value L.
-        L5 = "L";
         L6 = "";
         L7 = "";
         L8 = "";
@@ -627,8 +2009,7 @@ public class UserCubeInputView extends LinearLayout{
         D2 = "";
         D3 = "";
         D4 = "";
-        //String face center automatically has vlue D.
-        D5 = "D";
+        //String face center automatically has value D.
         D6 = "";
         D7 = "";
         D8 = "";
@@ -789,6 +2170,11 @@ public class UserCubeInputView extends LinearLayout{
     @OnClick(R.id.orange4)
     public void orange4() {
         //STRING F5 = F;
+        Flow flow = RubricsCubeApplication.getMainFlow();
+        History newHistory = flow.getHistory().buildUpon()
+                .push(new OrangeFaceInputStage())
+                .build();
+        flow.setHistory(newHistory, Flow.Direction.REPLACE);
 
     }
 
@@ -1092,6 +2478,11 @@ public class UserCubeInputView extends LinearLayout{
     @OnClick(R.id.green13)
     public void green13() {
         //R5 = "R";
+        Flow flow = RubricsCubeApplication.getMainFlow();
+        History newHistory = flow.getHistory().buildUpon()
+                .push(new GreenFaceInputStage())
+                .build();
+        flow.setHistory(newHistory, Flow.Direction.REPLACE);
 
     }
 
@@ -1395,6 +2786,11 @@ public class UserCubeInputView extends LinearLayout{
     @OnClick(R.id.white22)
     public void white22() {
         //U5 = "F";
+        Flow flow = RubricsCubeApplication.getMainFlow();
+        History newHistory = flow.getHistory().buildUpon()
+                .push(new WhiteFaceInputStage())
+                .build();
+        flow.setHistory(newHistory, Flow.Direction.REPLACE);
 
     }
 
@@ -1698,6 +3094,11 @@ public class UserCubeInputView extends LinearLayout{
     @OnClick(R.id.red31)
     public void red31() {
         //B5 = "F";
+        Flow flow = RubricsCubeApplication.getMainFlow();
+        History newHistory = flow.getHistory().buildUpon()
+                .push(new RedFaceInputStage())
+                .build();
+        flow.setHistory(newHistory, Flow.Direction.REPLACE);
 
     }
 
@@ -2001,6 +3402,11 @@ public class UserCubeInputView extends LinearLayout{
     @OnClick(R.id.blue40)
     public void blue40() {
         //L5 = "F";
+        Flow flow = RubricsCubeApplication.getMainFlow();
+        History newHistory = flow.getHistory().buildUpon()
+                .push(new BlueFaceInputStage())
+                .build();
+        flow.setHistory(newHistory, Flow.Direction.REPLACE);
 
     }
 
@@ -2303,6 +3709,11 @@ public class UserCubeInputView extends LinearLayout{
     @OnClick(R.id.yellow49)
     public void yellow49() {
       //  D5 = "F";
+        Flow flow = RubricsCubeApplication.getMainFlow();
+        History newHistory = flow.getHistory().buildUpon()
+                .push(new YellowFaceInputStage())
+                .build();
+        flow.setHistory(newHistory, Flow.Direction.REPLACE);
 
     }
 

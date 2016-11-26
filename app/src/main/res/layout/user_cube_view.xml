@@ -8,50 +8,51 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/cube_input"
+        android:padding="5dp"
         >
 
         <!--red top -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/red35"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/red34"
             android:layout_marginRight="3dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/red34"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/red33"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/red34"
             android:layout_marginLeft="3dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             />
 
         <!--red middle -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/red32"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/red31"
             android:layout_marginRight="3dp"
             android:layout_marginTop="3dp"
-            android:layout_below="@+id/red34"
+            android:layout_below="@+id/red35"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/red31"
             android:background="@color/colorRed"
             android:layout_centerHorizontal="true"
@@ -59,8 +60,8 @@
             android:layout_below="@+id/red34"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/red30"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/red31"
@@ -71,8 +72,8 @@
 
         <!--red bottom -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/red29"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/red28"
@@ -81,8 +82,8 @@
             android:layout_below="@+id/red32"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/red28"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
@@ -90,8 +91,8 @@
             android:layout_below="@+id/red31"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/red27"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/red28"
@@ -102,18 +103,18 @@
 
         <!--white top -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/white18"
             android:background="@color/colorPrimary"
-            android:layout_toLeftOf="@+id/red34"
+            android:layout_toLeftOf="@+id/white19"
             android:layout_marginRight="3dp"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/red29"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/white19"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
@@ -121,8 +122,8 @@
             android:layout_below="@+id/red28"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/white20"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/red34"
@@ -133,8 +134,8 @@
 
         <!--white middle -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/white21"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/white22"
@@ -143,8 +144,8 @@
             android:layout_below="@+id/white18"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/white22"
             android:background="@color/colorWhite"
             android:layout_centerHorizontal="true"
@@ -152,8 +153,8 @@
             android:layout_below="@+id/white19"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/white23"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/white22"
@@ -164,8 +165,8 @@
 
         <!--white bottom -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/white24"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/white25"
@@ -174,8 +175,8 @@
             android:layout_below="@+id/white21"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/white25"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
@@ -183,8 +184,8 @@
             android:layout_below="@+id/white22"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/white26"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/white25"
@@ -195,8 +196,8 @@
 
         <!--orange top -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/orange0"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/orange1"
@@ -205,8 +206,8 @@
             android:layout_below="@+id/white24"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/orange1"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
@@ -214,8 +215,8 @@
             android:layout_below="@+id/white25"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/orange2"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/orange1"
@@ -226,8 +227,8 @@
 
         <!--orange middle -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/orange3"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/orange4"
@@ -236,8 +237,8 @@
             android:layout_below="@+id/orange0"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/orange4"
             android:background="@color/colorOrange"
             android:layout_centerHorizontal="true"
@@ -245,8 +246,8 @@
             android:layout_below="@+id/orange1"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/orange5"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/orange4"
@@ -257,8 +258,8 @@
 
         <!--orange bottom -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/orange6"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/orange7"
@@ -267,8 +268,8 @@
             android:layout_below="@+id/orange3"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/orange7"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
@@ -276,8 +277,8 @@
             android:layout_below="@+id/orange4"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/orange8"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/orange7"
@@ -288,30 +289,30 @@
 
         <!--yellow top -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:id="@+id/yellow51"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/yellow45"
             android:background="@color/colorPrimary"
-            android:layout_toLeftOf="@+id/yellow48"
+            android:layout_toLeftOf="@+id/yellow46"
             android:layout_marginRight="3dp"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/orange6"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:id="@+id/yellow48"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/yellow46"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/orange7"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:id="@+id/yellow45"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/yellow47"
             android:background="@color/colorPrimary"
-            android:layout_toRightOf="@+id/yellow48"
+            android:layout_toRightOf="@+id/yellow46"
             android:layout_marginLeft="3dp"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/orange8"
@@ -319,70 +320,70 @@
 
         <!--yellow middle -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:id="@+id/yellow52"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/yellow48"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/yellow49"
             android:layout_marginRight="3dp"
             android:layout_marginTop="3dp"
-            android:layout_below="@+id/yellow51"
+            android:layout_below="@+id/yellow45"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/yellow49"
             android:background="@color/colorYellow"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="3dp"
-            android:layout_below="@+id/yellow48"
+            android:layout_below="@+id/yellow46"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:id="@+id/yellow46"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/yellow50"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/yellow49"
             android:layout_marginLeft="3dp"
             android:layout_marginTop="3dp"
-            android:layout_below="@+id/yellow45"
+            android:layout_below="@+id/yellow47"
             />
 
         <!--yellow bottom -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:id="@+id/yellow53"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/yellow51"
             android:background="@color/colorPrimary"
-            android:layout_toLeftOf="@+id/yellow50"
+            android:layout_toLeftOf="@+id/yellow52"
             android:layout_marginRight="3dp"
             android:layout_marginTop="3dp"
-            android:layout_below="@+id/yellow52"
+            android:layout_below="@+id/yellow48"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:id="@+id/yellow50"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/yellow52"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="3dp"
             android:layout_below="@+id/yellow49"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:id="@+id/yellow47"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/yellow53"
             android:background="@color/colorPrimary"
-            android:layout_toRightOf="@+id/yellow50"
+            android:layout_toRightOf="@+id/yellow52"
             android:layout_marginLeft="3dp"
             android:layout_marginTop="3dp"
-            android:layout_below="@+id/yellow46"
+            android:layout_below="@+id/yellow50"
             />
 
         <!--blue top located left of orange section-->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/blue36"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/blue37"
@@ -391,8 +392,8 @@
             android:layout_below="@+id/white24"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/blue37"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
@@ -401,8 +402,8 @@
             android:layout_toLeftOf="@+id/blue38"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/blue38"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/orange0"
@@ -414,8 +415,8 @@
 
         <!--blue middle located left of orange section -->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/blue39"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/blue40"
@@ -424,8 +425,8 @@
             android:layout_below="@+id/blue36"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/blue40"
             android:background="@color/colorBlue"
             android:layout_centerHorizontal="true"
@@ -434,8 +435,8 @@
             android:layout_toLeftOf="@+id/blue41"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/blue41"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/orange3"
@@ -446,8 +447,8 @@
             />
         <!--blue bottom located left of orange section-->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/blue42"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/blue43"
@@ -456,8 +457,8 @@
             android:layout_below="@+id/blue39"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/blue43"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
@@ -466,8 +467,8 @@
             android:layout_toLeftOf="@+id/blue44"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/blue44"
             android:background="@color/colorPrimary"
             android:layout_toLeftOf="@+id/orange6"
@@ -479,8 +480,8 @@
 
         <!--green top located right of orange section-->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/green9"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/orange2"
@@ -489,8 +490,8 @@
             android:layout_below="@+id/white26"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/green10"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
@@ -500,8 +501,8 @@
             android:layout_toRightOf="@+id/green9"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/green11"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/green10"
@@ -513,8 +514,8 @@
 
         <!--green middle located right of orange section-->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/green12"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/orange5"
@@ -523,8 +524,8 @@
             android:layout_below="@+id/green9"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/green13"
             android:background="@color/colorGreen"
             android:layout_centerHorizontal="true"
@@ -534,8 +535,8 @@
             android:layout_toRightOf="@+id/green12"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/green14"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/green13"
@@ -546,8 +547,8 @@
             />
         <!--green bottom located right of orange section-->
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/green15"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/orange8"
@@ -556,8 +557,8 @@
             android:layout_below="@+id/green12"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/green16"
             android:background="@color/colorPrimary"
             android:layout_centerHorizontal="true"
@@ -567,8 +568,8 @@
             android:layout_toRightOf="@+id/green15"
             />
         <Button
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/green17"
             android:background="@color/colorPrimary"
             android:layout_toRightOf="@+id/green16"
@@ -581,14 +582,14 @@
         <!-- Solve and reset buttons -->
         <Button
             android:layout_width="84dp"
-            android:layout_height="38dp"
+            android:layout_height="32dp"
             android:id="@+id/solveButton"
             android:background="@color/colorButton"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="3dp"
-            android:layout_marginLeft="23dp"
-            android:layout_below="@+id/yellow45"
-            android:layout_toRightOf="@+id/yellow46"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/yellow47"
+            android:layout_toRightOf="@+id/yellow50"
             android:text="@string/solve"
             android:textSize="25sp"
             />
@@ -599,9 +600,9 @@
             android:background="@color/colorButton"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="3dp"
-            android:layout_marginRight="23dp"
-            android:layout_below="@+id/yellow51"
-            android:layout_toLeftOf="@+id/yellow52"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/yellow45"
+            android:layout_toLeftOf="@+id/yellow48"
             android:text="@string/reset"
             android:textSize="25sp"
             />

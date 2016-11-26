@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.davidstemmer.screenplay.stage.Stage;
 import com.teamcube.rubricscube.R;
-import com.teamcube.rubricscube.Riggers.SlideRigger;
+import com.teamcube.rubricscube.Riggers.VerticalSlideRigger;
 import com.teamcube.rubricscube.RubricsCubeApplication;
 
 /**
@@ -12,11 +12,11 @@ import com.teamcube.rubricscube.RubricsCubeApplication;
  */
 
 public class UserCubeInputStage extends IndexedStage{
-    private final SlideRigger rigger;
+    private final VerticalSlideRigger rigger;
 
     public UserCubeInputStage(Application context){
         super (UserCubeInputStage.class.getName());
-        this.rigger = new SlideRigger(context);
+        this.rigger = new VerticalSlideRigger(context);
     }
 
     public UserCubeInputStage(){

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teamcube.rubricscube.Views.OrangeFaceInputView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <!--orange top -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/orange01"
+            android:background="@color/colorPrimary"
+            android:layout_toLeftOf="@+id/orange02"
+            android:layout_marginRight="7dp"
+            android:layout_above="@+id/orange04"
+            android:layout_marginBottom="7dp"
+
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/orange02"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/orange05"
+            android:layout_marginBottom="7dp"
+
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/orange03"
+            android:background="@color/colorPrimary"
+            android:layout_toRightOf="@+id/orange02"
+            android:layout_marginLeft="7dp"
+            android:layout_above="@+id/orange06"
+            android:layout_marginBottom="7dp"
+
+            />
+
+        <!--orange middle -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/orange04"
+            android:background="@color/colorPrimary"
+            android:layout_toLeftOf="@+id/orange05"
+            android:layout_marginRight="7dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/orange05"
+            android:background="@color/colorOrange"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/orange06"
+            android:background="@color/colorPrimary"
+            android:layout_toRightOf="@+id/orange05"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            />
+
+        <!--orange bottom -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/orange07"
+            android:background="@color/colorPrimary"
+            android:layout_toLeftOf="@+id/orange08"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/orange04"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/orange08"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/orange05"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/orange09"
+            android:background="@color/colorPrimary"
+            android:layout_toRightOf="@+id/orange08"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/orange06"
+            />
+
+<!--Transition to other page button -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/orangeTransitionToYellow"
+            android:background="@color/colorYellow"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:id="@+id/orangeTransitionToBlue"
+            android:background="@color/colorBlue"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:id="@+id/orangeTransitionToGreen"
+            android:background="@color/colorGreen"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/orangeTransitionToWhite"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+
+            />
+    </RelativeLayout>
+
+</com.teamcube.rubricscube.Views.OrangeFaceInputView>
