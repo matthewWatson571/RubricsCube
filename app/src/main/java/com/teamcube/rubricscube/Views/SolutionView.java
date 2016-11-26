@@ -41,7 +41,7 @@ public class SolutionView extends RelativeLayout {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(solutionAdapter);
-        printInstructions(UserInputView.splitRub);
+        printInstructions(UserCubeInputView.splitRub);
         solutionAdapter.notifyDataSetChanged();
     }
 

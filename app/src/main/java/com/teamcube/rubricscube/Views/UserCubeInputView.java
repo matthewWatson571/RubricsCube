@@ -30,6 +30,8 @@ import flow.History;
 public class UserCubeInputView extends LinearLayout{
 
     private Context context;
+    public static String[] splitRub;
+
 
     //Orange Face Strings.
     public static String F1;
