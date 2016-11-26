@@ -3,7 +3,8 @@ package com.teamcube.rubricscube.Stages;
 import com.davidstemmer.screenplay.stage.XmlStage;
 
 /**
- * Created by matthewsturgill on 11/16/16.
+<<<<<<< HEAD
+ * Created by aaroncampbell on 11/17/16.
  */
 
 public class IndexedStage extends XmlStage{
