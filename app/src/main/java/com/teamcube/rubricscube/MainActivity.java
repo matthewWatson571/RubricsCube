@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private ScreenplayDispatcher dispatcher;
     private Menu menu;
 
+
     @Bind(R.id.container)
     RelativeLayout container;
 
@@ -69,3 +70,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+

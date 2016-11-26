@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teamcube.rubricscube.Views.BlueFaceInputView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <!--blue top -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/blue01"
+            android:background="@color/colorPrimary"
+            android:layout_toLeftOf="@+id/blue02"
+            android:layout_marginRight="7dp"
+            android:layout_above="@+id/blue04"
+            android:layout_marginBottom="7dp"
+
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/blue02"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/blue05"
+            android:layout_marginBottom="7dp"
+
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/blue03"
+            android:background="@color/colorPrimary"
+            android:layout_toRightOf="@+id/blue02"
+            android:layout_marginLeft="7dp"
+            android:layout_above="@+id/blue06"
+            android:layout_marginBottom="7dp"
+
+            />
+
+        <!--blue middle -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/blue04"
+            android:background="@color/colorPrimary"
+            android:layout_toLeftOf="@+id/blue05"
+            android:layout_marginRight="7dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/blue05"
+            android:background="@color/colorBlue"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/blue06"
+            android:background="@color/colorPrimary"
+            android:layout_toRightOf="@+id/blue05"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            />
+
+        <!--blue bottom -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/blue07"
+            android:background="@color/colorPrimary"
+            android:layout_toLeftOf="@+id/blue08"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/blue04"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/blue08"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/blue05"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/blue09"
+            android:background="@color/colorPrimary"
+            android:layout_toRightOf="@+id/blue08"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/blue06"
+            />
+
+        <!--Transition to other page button -->
+        <!--at bottom -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/blueTransitionToYellow"
+            android:background="@color/colorYellow"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            />
+        <!-- at left -->
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:id="@+id/blueTransitionToRed"
+            android:background="@color/colorRed"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+
+        <!-- At right -->
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:id="@+id/blueTransitionToOrange"
+            android:background="@color/colorOrange"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <!-- at Top -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/blueTransitionToWhite"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+
+            />
+    </RelativeLayout>
+
+</com.teamcube.rubricscube.Views.BlueFaceInputView>
