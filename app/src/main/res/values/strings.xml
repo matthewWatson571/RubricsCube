@@ -4,4 +4,6 @@
     <string name="solve">SOLVE</string>
     <string name="randomize">Randomize</string>
     <string name="help">Help</string>
+    <string name="moves_list">Moves List</string>
+    <string name="input_error">Please Fill in all Cubies</string>
 </resources>

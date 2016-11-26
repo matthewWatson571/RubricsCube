@@ -2,7 +2,7 @@ package com.teamcube.rubricscube;
 
 import android.app.Application;
 
-import com.teamcube.rubricscube.Stages.UserCubeInputStage;
+import com.teamcube.rubricscube.Stages.UserInputStage;
 
 import flow.Flow;
 import flow.History;
@@ -14,7 +14,7 @@ import flow.History;
 public class RubricsCubeApplication extends Application {
 
     private static RubricsCubeApplication application;
-    public final Flow mainFlow = new Flow(History.single(new UserCubeInputStage()));
+    public final Flow mainFlow = new Flow(History.single(new UserInputStage()));
 
     @Override
     public void onCreate() {

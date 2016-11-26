@@ -27,7 +27,7 @@ public class LegendStage extends IndexedStage {
 
     @Override
     public int getLayoutId() {
-        return R.layout.cube_legend;
+        return R.layout.legend;
     }
 
     @Override

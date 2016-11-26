@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 
 import com.davidstemmer.flow.plugin.screenplay.ScreenplayDispatcher;
 import com.teamcube.rubricscube.Stages.LegendStage;
-import com.teamcube.rubricscube.Stages.UserCubeInputStage;
+import com.teamcube.rubricscube.Stages.UserInputStage;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -64,10 +64,8 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         if (!flow.goBack()) {
             flow.removeDispatcher(dispatcher);
-            flow.setHistory(History.single(new UserCubeInputStage()),
-                    Flow.Direction.BACKWARD);
+            flow.setHistory(History.single(new UserInputStage()), Flow.Direction.BACKWARD);
             super.onBackPressed();
         }
     }
-
 }

@@ -23,7 +23,7 @@ public class SolutionStage extends IndexedStage {
         return rigger;
     }
 
-    public SolutionStage(Application context) {
+    private SolutionStage(Application context) {
         super(SolutionStage.class.getName());
         this.rigger = new SlideRigger(context);
     }
