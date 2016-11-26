@@ -3,6 +3,7 @@ package com.teamcube.rubricscube.Views;
 import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -17,11 +18,15 @@ import com.teamcube.rubricscube.Stages.RedFaceInputStage;
 import com.teamcube.rubricscube.Stages.WhiteFaceInputStage;
 import com.teamcube.rubricscube.Stages.YellowFaceInputStage;
 
+import java.util.Arrays;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import flow.Flow;
 import flow.History;
+
+import static org.kociemba.twophase.Search.solution;
 
 /**
  * Created by matthewsturgill on 11/16/16.
@@ -170,186 +175,186 @@ public class UserCubeInputView extends LinearLayout{
     public static int yellow52Count =-1;
     public static int yellow53Count =-1;
     //Integer to hold sum of all cube values.
-    private int allCubiesAdded;
+        private int allCubiesAdded;
 
     //Bind all buttons for User input in numerical order.
     //Orange.
-    @Bind(R.id.orange0)
-    Button orange0;
+        @Bind(R.id.orange0)
+        Button orange0;
 
-    @Bind(R.id.orange1)
-    Button orange1;
+        @Bind(R.id.orange1)
+        Button orange1;
 
-    @Bind(R.id.orange2)
-    Button orange2;
+        @Bind(R.id.orange2)
+        Button orange2;
 
-    @Bind(R.id.orange3)
-    Button orange3;
+        @Bind(R.id.orange3)
+        Button orange3;
 
-    @Bind(R.id.orange4)
-    Button orange4;
+        @Bind(R.id.orange4)
+        Button orange4;
 
-    @Bind(R.id.orange5)
-    Button orange5;
+        @Bind(R.id.orange5)
+        Button orange5;
 
-    @Bind(R.id.orange6)
-    Button orange6;
+        @Bind(R.id.orange6)
+        Button orange6;
 
-    @Bind(R.id.orange7)
-    Button orange7;
+        @Bind(R.id.orange7)
+        Button orange7;
 
-    @Bind(R.id.orange8)
-    Button orange8;
+        @Bind(R.id.orange8)
+        Button orange8;
 
     //Green
-    @Bind(R.id.green9)
-    Button green9;
+        @Bind(R.id.green9)
+        Button green9;
 
-    @Bind(R.id.green10)
-    Button green10;
+        @Bind(R.id.green10)
+        Button green10;
 
-    @Bind(R.id.green11)
-    Button green11;
+        @Bind(R.id.green11)
+        Button green11;
 
-    @Bind(R.id.green12)
-    Button green12;
+        @Bind(R.id.green12)
+        Button green12;
 
-    @Bind(R.id.green13)
-    Button green13;
+        @Bind(R.id.green13)
+        Button green13;
 
-    @Bind(R.id.green14)
-    Button green14;
+        @Bind(R.id.green14)
+        Button green14;
 
-    @Bind(R.id.green15)
-    Button green15;
+        @Bind(R.id.green15)
+        Button green15;
 
-    @Bind(R.id.green16)
-    Button green16;
+        @Bind(R.id.green16)
+        Button green16;
 
-    @Bind(R.id.green17)
-    Button green17;
+        @Bind(R.id.green17)
+        Button green17;
 
     //White
-    @Bind(R.id.white18)
-    Button white18;
+        @Bind(R.id.white18)
+        Button white18;
 
-    @Bind(R.id.white19)
-    Button white19;
+        @Bind(R.id.white19)
+        Button white19;
 
-    @Bind(R.id.white20)
-    Button white20;
+        @Bind(R.id.white20)
+        Button white20;
 
-    @Bind(R.id.white21)
-    Button white21;
+        @Bind(R.id.white21)
+        Button white21;
 
-    @Bind(R.id.white22)
-    Button white22;
+        @Bind(R.id.white22)
+        Button white22;
 
-    @Bind(R.id.white23)
-    Button white23;
+        @Bind(R.id.white23)
+        Button white23;
 
-    @Bind(R.id.white24)
-    Button white24;
+        @Bind(R.id.white24)
+        Button white24;
 
-    @Bind(R.id.white25)
-    Button white25;
+        @Bind(R.id.white25)
+        Button white25;
 
-    @Bind(R.id.white26)
-    Button white26;
+        @Bind(R.id.white26)
+        Button white26;
 
     //Red
-    @Bind(R.id.red27)
-    Button red27;
+        @Bind(R.id.red27)
+        Button red27;
 
-    @Bind(R.id.red28)
-    Button red28;
+        @Bind(R.id.red28)
+        Button red28;
 
-    @Bind(R.id.red29)
-    Button red29;
+        @Bind(R.id.red29)
+        Button red29;
 
-    @Bind(R.id.red30)
-    Button red30;
+        @Bind(R.id.red30)
+        Button red30;
 
-    @Bind(R.id.red31)
-    Button red31;
+        @Bind(R.id.red31)
+        Button red31;
 
-    @Bind(R.id.red32)
-    Button red32;
+        @Bind(R.id.red32)
+        Button red32;
 
-    @Bind(R.id.red33)
-    Button red33;
+        @Bind(R.id.red33)
+        Button red33;
 
-    @Bind(R.id.red34)
-    Button red34;
+        @Bind(R.id.red34)
+        Button red34;
 
-    @Bind(R.id.red35)
-    Button red35;
+        @Bind(R.id.red35)
+        Button red35;
 
     //Blue
-    @Bind(R.id.blue36)
-    Button blue36;
+        @Bind(R.id.blue36)
+        Button blue36;
 
-    @Bind(R.id.blue37)
-    Button blue37;
+        @Bind(R.id.blue37)
+        Button blue37;
 
-    @Bind(R.id.blue38)
-    Button blue38;
+        @Bind(R.id.blue38)
+        Button blue38;
 
-    @Bind(R.id.blue39)
-    Button blue39;
+        @Bind(R.id.blue39)
+        Button blue39;
 
-    @Bind(R.id.blue40)
-    Button blue40;
+        @Bind(R.id.blue40)
+        Button blue40;
 
-    @Bind(R.id.blue41)
-    Button blue41;
+        @Bind(R.id.blue41)
+        Button blue41;
 
-    @Bind(R.id.blue42)
-    Button blue42;
+        @Bind(R.id.blue42)
+        Button blue42;
 
-    @Bind(R.id.blue43)
-    Button blue43;
+        @Bind(R.id.blue43)
+        Button blue43;
 
-    @Bind(R.id.blue44)
-    Button blue44;
+        @Bind(R.id.blue44)
+        Button blue44;
 
     //Yellow
-    @Bind(R.id.yellow45)
-    Button yellow45;
+        @Bind(R.id.yellow45)
+        Button yellow45;
 
-    @Bind(R.id.yellow46)
-    Button yellow46;
+        @Bind(R.id.yellow46)
+        Button yellow46;
 
-    @Bind(R.id.yellow47)
-    Button yellow47;
+        @Bind(R.id.yellow47)
+        Button yellow47;
 
-    @Bind(R.id.yellow48)
-    Button yellow48;
+        @Bind(R.id.yellow48)
+        Button yellow48;
 
-    @Bind(R.id.yellow49)
-    Button yellow49;
+        @Bind(R.id.yellow49)
+        Button yellow49;
 
-    @Bind(R.id.yellow50)
-    Button yellow50;
+        @Bind(R.id.yellow50)
+        Button yellow50;
 
-    @Bind(R.id.yellow51)
-    Button yellow51;
+        @Bind(R.id.yellow51)
+        Button yellow51;
 
-    @Bind(R.id.yellow52)
-    Button yellow52;
+        @Bind(R.id.yellow52)
+        Button yellow52;
 
-    @Bind(R.id.yellow53)
-    Button yellow53;
+        @Bind(R.id.yellow53)
+        Button yellow53;
 
     //Other Buttons
-    @Bind(R.id.solveButton)
-    Button solveButton;
+        @Bind(R.id.solveButton)
+        Button solveButton;
 
-    @Bind(R.id.resetButton)
-    Button resetButton;
+        @Bind(R.id.resetButton)
+        Button resetButton;
 
-    @Bind(R.id.progressSpinner)
-    ProgressBar progressSpinner;
+        @Bind(R.id.progressSpinner)
+        ProgressBar progressSpinner;
 
 //    @Bind(R.id.randomButton)
 //    Button randomButton;
@@ -1768,63 +1773,6 @@ public class UserCubeInputView extends LinearLayout{
 
     }
 
-    //Solve button and reset click
-    @OnClick(R.id.solveButton)
-    public void solveCube() {
-        allCubiesAdded = (orange0Count +
-                orange1Count +
-                orange2Count +
-                orange3Count +
-                orange4Count +
-                orange5Count +
-                orange6Count +
-                orange7Count +
-                orange8Count +
-                green9Count  +
-                green10Count +
-                green11Count +
-                green12Count +
-                green13Count +
-                green14Count +
-                green15Count +
-                green16Count +
-                green17Count +
-                white18Count +
-                white19Count +
-                white20Count +
-                white21Count +
-                white22Count +
-                white23Count +
-                white24Count +
-                white25Count +
-                white26Count +
-                red27Count   +
-                red28Count   +
-                red29Count   +
-                red30Count   +
-                red31Count   +
-                red32Count   +
-                red33Count   +
-                red34Count   +
-                red35Count   +
-                blue36Count  +
-                blue37Count  +
-                blue38Count  +
-                blue39Count  +
-                blue40Count  +
-                blue41Count  +
-                blue42Count  +
-                blue43Count  +
-                blue44Count  +
-                yellow45Count +
-                yellow46Count +
-                yellow47Count +
-                yellow48Count +
-                yellow49Count +
-                yellow50Count +
-                yellow51Count +
-                yellow52Count +
-                yellow53Count);
 
         //If all cubies combined equals 135 then it will show spinner and solve once algorithm is filled in.
         if (allCubiesAdded == 135){
@@ -1841,14 +1789,14 @@ public class UserCubeInputView extends LinearLayout{
     @OnClick(R.id.resetButton)
     public void resetCube() {
         //Orange integers. Orange color value = 0
-        orange0Count = -1;
-        orange0.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        orange1Count = -1;
-        orange1.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        orange2Count = -1;
-        orange2.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        orange3Count = -1;
-        orange3.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            orange0Count = -1;
+            orange0.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            orange1Count = -1;
+            orange1.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            orange2Count = -1;
+            orange2.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            orange3Count = -1;
+            orange3.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
         orange5Count = -1;
         orange5.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -1859,14 +1807,14 @@ public class UserCubeInputView extends LinearLayout{
         orange8Count = -1;
         orange8.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Green integers. Green color value = 1
-        green9Count  = -1;
-        green9.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        green10Count = -1;
-        green10.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        green11Count = -1;
-        green11.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        green12Count = -1;
-        green12.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            green9Count  = -1;
+            green9.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            green10Count = -1;
+            green10.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            green11Count = -1;
+            green11.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            green12Count = -1;
+            green12.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
         green14Count = -1;
         green14.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -1877,14 +1825,14 @@ public class UserCubeInputView extends LinearLayout{
         green17Count = -1;
         green17.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //White integers. White color value = 2
-        white18Count = -1;
-        white18.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        white19Count = -1;
-        white19.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        white20Count = -1;
-        white20.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        white21Count = -1;
-        white21.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            white18Count = -1;
+            white18.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            white19Count = -1;
+            white19.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            white20Count = -1;
+            white20.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            white21Count = -1;
+            white21.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
         white23Count = -1;
         white23.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -1895,14 +1843,14 @@ public class UserCubeInputView extends LinearLayout{
         white26Count = -1;
         white26.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Red integers. Red color value = 3
-        red27Count   = -1;
-        red27.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        red28Count   = -1;
-        red28.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        red29Count   = -1;
-        red29.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        red30Count   = -1;
-        red30.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            red27Count   = -1;
+            red27.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            red28Count   = -1;
+            red28.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            red29Count   = -1;
+            red29.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            red30Count   = -1;
+            red30.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
         red32Count   = -1;
         red32.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -1913,14 +1861,14 @@ public class UserCubeInputView extends LinearLayout{
         red35Count   = -1;
         red35.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Blue integers. Blue color value = 4
-        blue36Count  = -1;
-        blue36.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        blue37Count  = -1;
-        blue37.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        blue38Count  = -1;
-        blue38.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        blue39Count  = -1;
-        blue39.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            blue36Count  = -1;
+            blue36.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            blue37Count  = -1;
+            blue37.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            blue38Count  = -1;
+            blue38.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            blue39Count  = -1;
+            blue39.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
         blue41Count  = -1;
         blue41.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -1931,14 +1879,14 @@ public class UserCubeInputView extends LinearLayout{
         blue44Count  = -1;
         blue44.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Yellow integers. Yellow color value = 5
-        yellow45Count =-1;
-        yellow45.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        yellow46Count =-1;
-        yellow46.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        yellow47Count =-1;
-        yellow47.setBackgroundColor(Color.argb(255, 191, 191, 191));
-        yellow48Count =-1;
-        yellow48.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            yellow45Count =-1;
+            yellow45.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            yellow46Count =-1;
+            yellow46.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            yellow47Count =-1;
+            yellow47.setBackgroundColor(Color.argb(255, 191, 191, 191));
+            yellow48Count =-1;
+            yellow48.setBackgroundColor(Color.argb(255, 191, 191, 191));
         //Int representing center square is already set to color value.
         yellow50Count =-1;
         yellow50.setBackgroundColor(Color.argb(255, 191, 191, 191));
@@ -1950,10 +1898,10 @@ public class UserCubeInputView extends LinearLayout{
         yellow53.setBackgroundColor(Color.argb(255, 191, 191, 191));
 
         //Orange Face Strings.
-        F1 = "";
-        F2 = "";
-        F3 = "";
-        F4 = "";
+            F1 = "";
+            F2 = "";
+            F3 = "";
+            F4 = "";
         //String face center automatically has value F.
         F6 = "";
         F7 = "";
@@ -1961,10 +1909,10 @@ public class UserCubeInputView extends LinearLayout{
         F9 = "";
 
         //Green Face String.
-        R1  = "";
-        R2  = "";
-        R3  = "";
-        R4  = "";
+            R1  = "";
+            R2  = "";
+            R3  = "";
+            R4  = "";
         //String face center automatically has value R.
         R6  = "";
         R7  = "";
@@ -1972,10 +1920,10 @@ public class UserCubeInputView extends LinearLayout{
         R9  = "";
 
         //White Face String.
-        U1 = "";
-        U2 = "";
-        U3 = "";
-        U4 = "";
+            U1 = "";
+            U2 = "";
+            U3 = "";
+            U4 = "";
         //String face center automatically has value U.
         U6 = "";
         U7 = "";
@@ -1983,10 +1931,10 @@ public class UserCubeInputView extends LinearLayout{
         U9 = "";
 
         //Red Face String.
-        B1   = "";
-        B2   = "";
-        B3   = "";
-        B4   = "";
+            B1   = "";
+            B2   = "";
+            B3   = "";
+            B4   = "";
         //String face center automatically has value B.
         B6   = "";
         B7   = "";
@@ -1994,10 +1942,10 @@ public class UserCubeInputView extends LinearLayout{
         B9   = "";
 
         //Blue face String.
-        L1 = "";
-        L2 = "";;
-        L3 = "";
-        L4 = "";
+            L1 = "";
+            L2 = "";;
+            L3 = "";
+            L4 = "";
         //String face center automatically has value L.
         L6 = "";
         L7 = "";
@@ -3869,5 +3817,46 @@ public class UserCubeInputView extends LinearLayout{
             yellow53.setBackgroundColor(Color.argb(255, 191, 191, 191));
             D9 = "";
         }
+    }
+
+    //Solve button and reset click
+    @OnClick(R.id.solveButton)
+    public void solveCube() {
+        String mixCube =
+                U1 + U2 + U3 + U4 + U5 + U6 + U7 + U8 + U9 +
+                R1 + R2 + R3 + R4 + R5 + R6 + R7 + R8 + R9 +
+                F1 + F2 + F3 + F4 + F5 + F6 + F7 + F8 + F9 +
+                D1 + D2 + D3 + D4 + D5 + D6 + D7 + D8 + D9 +
+                L1 + L2 + L3 + L4 + L5 + L6 + L7 + L8 + L9 +
+                B1 + B2 + B3 + B4 + B5 + B6 + B7 + B8 + B9;
+
+        allCubiesAdded = (orange0Count + orange1Count + orange2Count + orange3Count +
+                orange4Count + orange5Count + orange6Count + orange7Count + orange8Count +
+                green9Count  + green10Count + green11Count + green12Count + green13Count +
+                green14Count + green15Count + green16Count + green17Count + white18Count +
+                white19Count + white20Count + white21Count + white22Count + white23Count +
+                white24Count + white25Count + white26Count + red27Count   + red28Count   +
+                red29Count   + red30Count   + red31Count   + red32Count   + red33Count   +
+                red34Count   + red35Count   + blue36Count  + blue37Count  + blue38Count  +
+                blue39Count  + blue40Count  + blue41Count  + blue42Count  + blue43Count  +
+                blue44Count  + yellow45Count + yellow46Count + yellow47Count + yellow48Count +
+                yellow49Count + yellow50Count + yellow51Count + yellow52Count + yellow53Count);
+
+        //If all cubies combined equals 135 then it will show spinner and solve once algorithm is filled in.
+        if (allCubiesAdded == 135){
+            progressSpinner.setVisibility(VISIBLE);
+
+            String ans = solution(mixCube, 21, 10, false);
+            String[] splitRub = ans.split("\\s+");
+
+            Log.d(">>>>>>>>>>>>>>>>>>", mixCube);
+            Log.d(">>>>>>>>>>>>>>>>>>", Arrays.toString(splitRub));
+
+        } else {
+            Toast.makeText(context, ("Please Fill in all Cubies" + allCubiesAdded), Toast.LENGTH_LONG).show();
+
+        }
+
+
     }
 }
