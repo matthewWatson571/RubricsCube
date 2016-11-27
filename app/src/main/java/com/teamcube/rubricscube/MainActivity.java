@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         if (!flow.goBack()) {
             flow.removeDispatcher(dispatcher);
-            flow.setHistory(History.single(new UserCubeInputStage()), Flow.Direction.BACKWARD);
+            flow.setHistory(History.single(new UserCubeInputStage()), Flow.Direction.FORWARD);
             super.onBackPressed();
         }
     }

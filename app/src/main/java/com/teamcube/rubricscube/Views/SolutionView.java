@@ -32,7 +32,6 @@ public class SolutionView extends RelativeLayout {
         this.context = context;
     }
 
-
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
@@ -46,6 +45,7 @@ public class SolutionView extends RelativeLayout {
         printInstructions(UserCubeInputView.splitRub);
         solutionAdapter.notifyDataSetChanged();
     }
+
 
     public static void printInstructions(String[] splitRub) {
 
