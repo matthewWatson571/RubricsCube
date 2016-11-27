@@ -2107,7 +2107,6 @@ public class UserCubeInputView extends LinearLayout {
     public UserCubeInputView(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
-
     }
 
     //Solve button and reset click
@@ -2191,7 +2190,8 @@ public class UserCubeInputView extends LinearLayout {
             Log.d("splitRub", String.valueOf(splitRub));//[Error,8]
 
             Flow flow = RubricsCubeApplication.getMainFlow();
-            History newHistory = History.single(new SolutionStage());
+            History newHistory = flow.getHistory().buildUpon().push(new SolutionStage()).build();
+
             flow.setHistory(newHistory, Flow.Direction.FORWARD);
 
         } else {

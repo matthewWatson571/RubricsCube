@@ -46,6 +46,7 @@ public class SolutionView extends RelativeLayout {
         solutionAdapter.notifyDataSetChanged();
     }
 
+
     public static void printInstructions(String[] splitRub) {
 
         for (int i = 0; i < splitRub.length; i++) {
