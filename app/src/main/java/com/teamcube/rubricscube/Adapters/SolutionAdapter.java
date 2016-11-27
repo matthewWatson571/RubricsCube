@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 
 import com.teamcube.rubricscube.R;
@@ -52,6 +53,9 @@ public class SolutionAdapter extends RecyclerView.Adapter<SolutionAdapter.Soluti
         @Bind(R.id.move_image)
         ImageView solutionImage;
 
+        @Bind(R.id.checkBox)
+        CheckBox checkBox;
+
 
         SolutionHolder(View itemView) {
             super(itemView);
@@ -61,6 +65,7 @@ public class SolutionAdapter extends RecyclerView.Adapter<SolutionAdapter.Soluti
         void bindMove(Integer solution) {
             Log.d("solution", String.valueOf(solution));
             solutionImage.setImageResource(solution);
+            checkBox.setChecked(false);
         }
     }
 }

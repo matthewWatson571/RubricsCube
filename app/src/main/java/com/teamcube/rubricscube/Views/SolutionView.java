@@ -32,7 +32,6 @@ public class SolutionView extends RelativeLayout {
         this.context = context;
     }
 
-
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
