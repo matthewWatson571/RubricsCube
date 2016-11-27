@@ -11,15 +11,15 @@ import com.teamcube.rubricscube.RubricsCubeApplication;
  * Created by matthewsturgill on 11/16/16.
  */
 
-public class UserCubeInputStage extends IndexedStage{
+public class UserCubeInputStage extends IndexedStage {
     private final VerticalSlideRigger rigger;
 
-    public UserCubeInputStage(Application context){
-        super (UserCubeInputStage.class.getName());
+    public UserCubeInputStage(Application context) {
+        super(UserCubeInputStage.class.getName());
         this.rigger = new VerticalSlideRigger(context);
     }
 
-    public UserCubeInputStage(){
+    public UserCubeInputStage() {
         this(RubricsCubeApplication.getInstance());
 
     }

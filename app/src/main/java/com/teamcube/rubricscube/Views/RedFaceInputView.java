@@ -315,33 +315,40 @@ public class RedFaceInputView extends LinearLayout {
                 red09.setBackgroundColor(Color.argb(255, 191, 191, 191));
         }
     }
+
     @OnClick(R.id.red01)
-    public void red01(){
-        red27Count ++;
-        if(red27Count < 6){
-            switch (red27Count){
+    public void red01() {
+        red27Count++;
+        if (red27Count < 6) {
+            switch (red27Count) {
                 //orange
-                case 0: red01.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    red01.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     B1 = "F";
                     break;
                 //green
-                case 1: red01.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    red01.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     B1 = "R";
                     break;
                 //white
-                case 2: red01.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    red01.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     B1 = "U";
                     break;
                 //red
-                case 3: red01.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    red01.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     B1 = "B";
                     break;
                 //blue
-                case 4: red01.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    red01.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     B1 = "L";
                     break;
                 //yellow
-                case 5: red01.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    red01.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     B1 = "D";
                     break;
             }
@@ -351,33 +358,40 @@ public class RedFaceInputView extends LinearLayout {
             B1 = "";
         }
     }
+
     @OnClick(R.id.red02)
-    public void red02(){
-        red28Count ++;
-        if(red28Count < 6){
-            switch (red28Count){
+    public void red02() {
+        red28Count++;
+        if (red28Count < 6) {
+            switch (red28Count) {
                 //orange
-                case 0: red02.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    red02.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     B2 = "F";
                     break;
                 //green
-                case 1: red02.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    red02.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     B2 = "R";
                     break;
                 //white
-                case 2: red02.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    red02.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     B2 = "U";
                     break;
                 //red
-                case 3: red02.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    red02.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     B2 = "B";
                     break;
                 //blue
-                case 4: red02.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    red02.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     B2 = "L";
                     break;
                 //yellow
-                case 5: red02.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    red02.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     B2 = "D";
                     break;
             }
@@ -387,33 +401,40 @@ public class RedFaceInputView extends LinearLayout {
             B2 = "";
         }
     }
+
     @OnClick(R.id.red03)
-    public void red03(){
-        red29Count ++;
-        if(red29Count < 6){
-            switch (red29Count){
+    public void red03() {
+        red29Count++;
+        if (red29Count < 6) {
+            switch (red29Count) {
                 //orange
-                case 0: red03.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    red03.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     B3 = "F";
                     break;
                 //green
-                case 1: red03.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    red03.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     B3 = "R";
                     break;
                 //white
-                case 2: red03.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    red03.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     B3 = "U";
                     break;
                 //red
-                case 3: red03.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    red03.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     B3 = "B";
                     break;
                 //blue
-                case 4: red03.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    red03.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     B3 = "L";
                     break;
                 //yellow
-                case 5: red03.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    red03.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     B3 = "D";
                     break;
             }
@@ -423,33 +444,40 @@ public class RedFaceInputView extends LinearLayout {
             B3 = "";
         }
     }
+
     @OnClick(R.id.red04)
-    public void red04(){
-        red30Count ++;
-        if(red30Count < 6){
-            switch (red30Count){
+    public void red04() {
+        red30Count++;
+        if (red30Count < 6) {
+            switch (red30Count) {
                 //orange
-                case 0: red04.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    red04.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     B4 = "F";
                     break;
                 //green
-                case 1: red04.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    red04.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     B4 = "R";
                     break;
                 //white
-                case 2: red04.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    red04.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     B4 = "U";
                     break;
                 //red
-                case 3: red04.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    red04.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     B4 = "B";
                     break;
                 //blue
-                case 4: red04.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    red04.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     B4 = "L";
                     break;
                 //yellow
-                case 5: red04.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    red04.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     B4 = "D";
                     break;
             }
@@ -459,37 +487,45 @@ public class RedFaceInputView extends LinearLayout {
             B4 = "";
         }
     }
+
     @OnClick(R.id.red05)
-    public void red05(){
+    public void red05() {
 
     }
+
     @OnClick(R.id.red06)
-    public void red06(){
-        red32Count ++;
-        if(red32Count < 6){
-            switch (red32Count){
+    public void red06() {
+        red32Count++;
+        if (red32Count < 6) {
+            switch (red32Count) {
                 //orange
-                case 0: red06.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    red06.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     B6 = "F";
                     break;
                 //green
-                case 1: red06.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    red06.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     B6 = "R";
                     break;
                 //white
-                case 2: red06.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    red06.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     B6 = "U";
                     break;
                 //red
-                case 3: red06.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    red06.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     B6 = "B";
                     break;
                 //blue
-                case 4: red06.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    red06.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     B6 = "L";
                     break;
                 //yellow
-                case 5: red06.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    red06.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     B6 = "D";
                     break;
             }
@@ -499,33 +535,40 @@ public class RedFaceInputView extends LinearLayout {
             B6 = "";
         }
     }
+
     @OnClick(R.id.red07)
-    public void red07(){
-        red33Count ++;
-        if(red33Count < 6){
-            switch (red33Count){
+    public void red07() {
+        red33Count++;
+        if (red33Count < 6) {
+            switch (red33Count) {
                 //orange
-                case 0: red07.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    red07.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     B7 = "F";
                     break;
                 //green
-                case 1: red07.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    red07.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     B7 = "R";
                     break;
                 //white
-                case 2: red07.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    red07.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     B7 = "U";
                     break;
                 //red
-                case 3: red07.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    red07.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     B7 = "B";
                     break;
                 //blue
-                case 4: red07.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    red07.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     B7 = "L";
                     break;
                 //yellow
-                case 5: red07.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    red07.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     B7 = "D";
                     break;
             }
@@ -535,33 +578,40 @@ public class RedFaceInputView extends LinearLayout {
             B7 = "";
         }
     }
+
     @OnClick(R.id.red08)
-    public void red08(){
-        red34Count ++;
-        if(red34Count < 6){
-            switch (red34Count){
+    public void red08() {
+        red34Count++;
+        if (red34Count < 6) {
+            switch (red34Count) {
                 //orange
-                case 0: red08.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    red08.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     B8 = "F";
                     break;
                 //green
-                case 1: red08.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    red08.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     B8 = "R";
                     break;
                 //white
-                case 2: red08.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    red08.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     B8 = "U";
                     break;
                 //red
-                case 3: red08.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    red08.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     B8 = "B";
                     break;
                 //blue
-                case 4: red08.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    red08.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     B8 = "L";
                     break;
                 //yellow
-                case 5: red08.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    red08.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     B8 = "D";
                     break;
             }
@@ -571,33 +621,40 @@ public class RedFaceInputView extends LinearLayout {
             B8 = "";
         }
     }
+
     @OnClick(R.id.red09)
-    public void red09(){
-        red35Count ++;
-        if(red35Count < 6){
-            switch (red35Count){
+    public void red09() {
+        red35Count++;
+        if (red35Count < 6) {
+            switch (red35Count) {
                 //orange
-                case 0: red09.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    red09.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     B9 = "F";
                     break;
                 //green
-                case 1: red09.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    red09.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     B9 = "R";
                     break;
                 //white
-                case 2: red09.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    red09.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     B9 = "U";
                     break;
                 //red
-                case 3: red09.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    red09.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     B9 = "B";
                     break;
                 //blue
-                case 4: red09.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    red09.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     B9 = "L";
                     break;
                 //yellow
-                case 5: red09.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    red09.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     B9 = "D";
                     break;
             }

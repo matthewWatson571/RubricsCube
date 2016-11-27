@@ -11,16 +11,16 @@ import com.teamcube.rubricscube.RubricsCubeApplication;
  * Created by matthewsturgill on 11/21/16.
  */
 
-public class BlueFaceInputStage extends IndexedStage{
+public class BlueFaceInputStage extends IndexedStage {
 
     private final SlideRigger rigger;
 
-    public BlueFaceInputStage(Application context){
-        super (BlueFaceInputStage.class.getName());
+    public BlueFaceInputStage(Application context) {
+        super(BlueFaceInputStage.class.getName());
         this.rigger = new SlideRigger(context);
     }
 
-    public BlueFaceInputStage(){
+    public BlueFaceInputStage() {
         this(RubricsCubeApplication.getInstance());
 
     }

@@ -6,4 +6,5 @@
     <string name="help">Help</string>
     <string name="moves_list">Moves List</string>
     <string name="input_error">Please Fill in all Cubies</string>
+    <string name="cube_error">Please Fill in Cube arrangement correctly</string>
 </resources>

@@ -33,7 +33,7 @@ import static com.teamcube.rubricscube.Views.UserCubeInputView.yellow53Count;
  * Created by matthewsturgill on 11/20/16.
  */
 
-public class YellowFaceInputView extends LinearLayout{
+public class YellowFaceInputView extends LinearLayout {
 
     private Context context;
 
@@ -317,32 +317,38 @@ public class YellowFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.yellow01)
-    public void yellow01(){
-        yellow45Count ++;
-        if(yellow45Count < 6){
-            switch (yellow45Count){
+    public void yellow01() {
+        yellow45Count++;
+        if (yellow45Count < 6) {
+            switch (yellow45Count) {
                 //orange
-                case 0: yellow01.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    yellow01.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     D1 = "F";
                     break;
                 //green
-                case 1: yellow01.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    yellow01.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     D1 = "R";
                     break;
                 //white
-                case 2: yellow01.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    yellow01.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     D1 = "U";
                     break;
                 //red
-                case 3: yellow01.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    yellow01.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     D1 = "B";
                     break;
                 //blue
-                case 4: yellow01.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    yellow01.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     D1 = "L";
                     break;
                 //yellow
-                case 5: yellow01.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    yellow01.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     D1 = "D";
                     break;
             }
@@ -354,32 +360,38 @@ public class YellowFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.yellow02)
-    public void yellow02(){
-        yellow46Count ++;
-        if(yellow46Count < 6){
-            switch (yellow46Count){
+    public void yellow02() {
+        yellow46Count++;
+        if (yellow46Count < 6) {
+            switch (yellow46Count) {
                 //orange
-                case 0: yellow02.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    yellow02.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     D2 = "F";
                     break;
                 //green
-                case 1: yellow02.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    yellow02.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     D2 = "R";
                     break;
                 //white
-                case 2: yellow02.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    yellow02.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     D2 = "U";
                     break;
                 //red
-                case 3: yellow02.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    yellow02.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     D2 = "B";
                     break;
                 //blue
-                case 4: yellow02.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    yellow02.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     D2 = "L";
                     break;
                 //yellow
-                case 5: yellow02.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    yellow02.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     D2 = "D";
                     break;
             }
@@ -391,32 +403,38 @@ public class YellowFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.yellow03)
-    public void yellow03(){
-        yellow47Count ++;
-        if(yellow47Count < 6){
-            switch (yellow47Count){
+    public void yellow03() {
+        yellow47Count++;
+        if (yellow47Count < 6) {
+            switch (yellow47Count) {
                 //orange
-                case 0: yellow03.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    yellow03.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     D3 = "F";
                     break;
                 //green
-                case 1: yellow03.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    yellow03.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     D3 = "R";
                     break;
                 //white
-                case 2: yellow03.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    yellow03.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     D3 = "U";
                     break;
                 //red
-                case 3: yellow03.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    yellow03.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     D3 = "B";
                     break;
                 //blue
-                case 4: yellow03.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    yellow03.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     D3 = "L";
                     break;
                 //yellow
-                case 5: yellow03.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    yellow03.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     D3 = "D";
                     break;
             }
@@ -428,32 +446,38 @@ public class YellowFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.yellow04)
-    public void yellow04(){
-        yellow48Count ++;
-        if(yellow48Count < 6){
-            switch (yellow48Count){
+    public void yellow04() {
+        yellow48Count++;
+        if (yellow48Count < 6) {
+            switch (yellow48Count) {
                 //orange
-                case 0: yellow04.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    yellow04.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     D4 = "F";
                     break;
                 //green
-                case 1: yellow04.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    yellow04.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     D4 = "R";
                     break;
                 //white
-                case 2: yellow04.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    yellow04.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     D4 = "U";
                     break;
                 //red
-                case 3: yellow04.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    yellow04.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     D4 = "B";
                     break;
                 //blue
-                case 4: yellow04.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    yellow04.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     D4 = "L";
                     break;
                 //yellow
-                case 5: yellow04.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    yellow04.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     D4 = "D";
                     break;
             }
@@ -465,38 +489,44 @@ public class YellowFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.yellow05)
-    public void yellow05(){
+    public void yellow05() {
         //Finalized in UserCubeinputView;
 
     }
 
     @OnClick(R.id.yellow06)
-    public void yellow06(){
-        yellow50Count ++;
-        if(yellow50Count < 6){
-            switch (yellow50Count){
+    public void yellow06() {
+        yellow50Count++;
+        if (yellow50Count < 6) {
+            switch (yellow50Count) {
                 //orange
-                case 0: yellow06.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    yellow06.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     D6 = "F";
                     break;
                 //green
-                case 1: yellow06.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    yellow06.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     D6 = "R";
                     break;
                 //white
-                case 2: yellow06.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    yellow06.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     D6 = "U";
                     break;
                 //red
-                case 3: yellow06.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    yellow06.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     D6 = "B";
                     break;
                 //blue
-                case 4: yellow06.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    yellow06.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     D6 = "L";
                     break;
                 //yellow
-                case 5: yellow06.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    yellow06.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     D6 = "D";
                     break;
             }
@@ -508,32 +538,38 @@ public class YellowFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.yellow07)
-    public void yellow07(){
-        yellow51Count ++;
-        if(yellow51Count < 6){
-            switch (yellow51Count){
+    public void yellow07() {
+        yellow51Count++;
+        if (yellow51Count < 6) {
+            switch (yellow51Count) {
                 //orange
-                case 0: yellow07.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    yellow07.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     D7 = "F";
                     break;
                 //green
-                case 1: yellow07.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    yellow07.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     D7 = "R";
                     break;
                 //white
-                case 2: yellow07.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    yellow07.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     D7 = "U";
                     break;
                 //red
-                case 3: yellow07.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    yellow07.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     D7 = "B";
                     break;
                 //blue
-                case 4: yellow07.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    yellow07.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     D7 = "L";
                     break;
                 //yellow
-                case 5: yellow07.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    yellow07.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     D7 = "D";
                     break;
             }
@@ -545,32 +581,38 @@ public class YellowFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.yellow08)
-    public void yellow08(){
-        yellow52Count ++;
-        if(yellow52Count < 6){
-            switch (yellow52Count){
+    public void yellow08() {
+        yellow52Count++;
+        if (yellow52Count < 6) {
+            switch (yellow52Count) {
                 //orange
-                case 0: yellow08.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    yellow08.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     D8 = "F";
                     break;
                 //green
-                case 1: yellow08.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    yellow08.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     D8 = "R";
                     break;
                 //white
-                case 2: yellow08.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    yellow08.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     D8 = "U";
                     break;
                 //red
-                case 3: yellow08.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    yellow08.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     D8 = "B";
                     break;
                 //blue
-                case 4: yellow08.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    yellow08.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     D8 = "L";
                     break;
                 //yellow
-                case 5: yellow08.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    yellow08.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     D8 = "D";
                     break;
             }
@@ -582,32 +624,38 @@ public class YellowFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.yellow09)
-    public void yellow09(){
-        yellow53Count ++;
-        if(yellow53Count < 6){
-            switch (yellow53Count){
+    public void yellow09() {
+        yellow53Count++;
+        if (yellow53Count < 6) {
+            switch (yellow53Count) {
                 //orange
-                case 0: yellow09.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    yellow09.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     D9 = "F";
                     break;
                 //green
-                case 1: yellow09.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    yellow09.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     D9 = "R";
                     break;
                 //white
-                case 2: yellow09.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    yellow09.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     D9 = "U";
                     break;
                 //red
-                case 3: yellow09.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    yellow09.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     D9 = "B";
                     break;
                 //blue
-                case 4: yellow09.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    yellow09.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     D9 = "L";
                     break;
                 //yellow
-                case 5: yellow09.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    yellow09.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     D9 = "D";
                     break;
             }
@@ -617,6 +665,7 @@ public class YellowFaceInputView extends LinearLayout{
             D9 = "";
         }
     }
+
     //Transition buttons
 //    @OnClick(R.id.yellowTransitionToBlue)
 //    public void yellowTransitionToBlue(){

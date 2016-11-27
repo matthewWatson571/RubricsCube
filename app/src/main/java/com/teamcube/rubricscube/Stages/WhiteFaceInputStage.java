@@ -14,12 +14,12 @@ import com.teamcube.rubricscube.RubricsCubeApplication;
 public class WhiteFaceInputStage extends IndexedStage {
     private final SlideRigger rigger;
 
-    public WhiteFaceInputStage(Application context){
-        super (WhiteFaceInputStage.class.getName());
+    public WhiteFaceInputStage(Application context) {
+        super(WhiteFaceInputStage.class.getName());
         this.rigger = new SlideRigger(context);
     }
 
-    public WhiteFaceInputStage(){
+    public WhiteFaceInputStage() {
         this(RubricsCubeApplication.getInstance());
 
     }

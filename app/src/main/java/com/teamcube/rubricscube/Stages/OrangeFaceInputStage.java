@@ -11,15 +11,15 @@ import com.teamcube.rubricscube.RubricsCubeApplication;
  * Created by matthewsturgill on 11/20/16.
  */
 
-public class OrangeFaceInputStage extends IndexedStage{
+public class OrangeFaceInputStage extends IndexedStage {
     private final SlideRigger rigger;
 
-    public OrangeFaceInputStage(Application context){
-        super (OrangeFaceInputStage.class.getName());
+    public OrangeFaceInputStage(Application context) {
+        super(OrangeFaceInputStage.class.getName());
         this.rigger = new SlideRigger(context);
     }
 
-    public OrangeFaceInputStage(){
+    public OrangeFaceInputStage() {
         this(RubricsCubeApplication.getInstance());
 
     }

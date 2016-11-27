@@ -25,7 +25,7 @@ import static com.teamcube.rubricscube.Views.UserCubeInputView.orange8Count;
  * Created by matthewsturgill on 11/20/16.
  */
 
-public class OrangeFaceInputView extends LinearLayout{
+public class OrangeFaceInputView extends LinearLayout {
 
     public Context context;
 
@@ -309,32 +309,38 @@ public class OrangeFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.orange01)
-    public void orange01(){
-        orange0Count ++;
-        if(orange0Count < 6){
-            switch (orange0Count){
+    public void orange01() {
+        orange0Count++;
+        if (orange0Count < 6) {
+            switch (orange0Count) {
                 //orange
-                case 0: orange01.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    orange01.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     UserCubeInputView.F1 = "F";
                     break;
                 //green
-                case 1: orange01.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    orange01.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     UserCubeInputView.F1 = "R";
                     break;
                 //white
-                case 2: orange01.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    orange01.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     UserCubeInputView.F1 = "U";
                     break;
                 //red
-                case 3: orange01.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    orange01.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     UserCubeInputView.F1 = "B";
                     break;
                 //blue
-                case 4: orange01.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    orange01.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     UserCubeInputView.F1 = "L";
                     break;
                 //yellow
-                case 5: orange01.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    orange01.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     UserCubeInputView.F1 = "D";
                     break;
             }
@@ -346,32 +352,38 @@ public class OrangeFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.orange02)
-    public void orange02(){
-        orange1Count ++;
-        if(orange1Count < 6){
-            switch (orange1Count){
+    public void orange02() {
+        orange1Count++;
+        if (orange1Count < 6) {
+            switch (orange1Count) {
                 //orange
-                case 0: orange02.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    orange02.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     UserCubeInputView.F2 = "F";
                     break;
                 //green
-                case 1: orange02.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    orange02.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     UserCubeInputView.F2 = "R";
                     break;
                 //white
-                case 2: orange02.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    orange02.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     UserCubeInputView.F2 = "U";
                     break;
                 //red
-                case 3: orange02.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    orange02.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     UserCubeInputView.F2 = "B";
                     break;
                 //blue
-                case 4: orange02.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    orange02.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     UserCubeInputView.F2 = "L";
                     break;
                 //yellow
-                case 5: orange02.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    orange02.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     UserCubeInputView.F2 = "D";
                     break;
             }
@@ -383,32 +395,38 @@ public class OrangeFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.orange03)
-    public void orange03(){
-        orange2Count ++;
-        if(orange2Count < 6){
-            switch (orange2Count){
+    public void orange03() {
+        orange2Count++;
+        if (orange2Count < 6) {
+            switch (orange2Count) {
                 //orange
-                case 0: orange03.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    orange03.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     UserCubeInputView.F3 = "F";
                     break;
                 //green
-                case 1: orange03.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    orange03.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     UserCubeInputView.F3 = "R";
                     break;
                 //white
-                case 2: orange03.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    orange03.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     UserCubeInputView.F3 = "U";
                     break;
                 //red
-                case 3: orange03.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    orange03.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     UserCubeInputView.F3 = "B";
                     break;
                 //blue
-                case 4: orange03.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    orange03.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     UserCubeInputView.F3 = "L";
                     break;
                 //yellow
-                case 5: orange03.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    orange03.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     UserCubeInputView.F3 = "D";
                     break;
             }
@@ -420,32 +438,38 @@ public class OrangeFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.orange04)
-    public void orange04(){
-        orange3Count ++;
-        if(orange3Count < 6){
-            switch (orange3Count){
+    public void orange04() {
+        orange3Count++;
+        if (orange3Count < 6) {
+            switch (orange3Count) {
                 //orange
-                case 0: orange04.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    orange04.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     UserCubeInputView.F4 = "F";
                     break;
                 //green
-                case 1: orange04.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    orange04.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     UserCubeInputView.F4 = "R";
                     break;
                 //white
-                case 2: orange04.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    orange04.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     UserCubeInputView.F4 = "U";
                     break;
                 //red
-                case 3: orange04.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    orange04.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     UserCubeInputView.F4 = "B";
                     break;
                 //blue
-                case 4: orange04.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    orange04.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     UserCubeInputView.F4 = "L";
                     break;
                 //yellow
-                case 5: orange04.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    orange04.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     UserCubeInputView.F4 = "D";
                     break;
             }
@@ -457,38 +481,44 @@ public class OrangeFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.orange05)
-    public void orange05(){
-       //Orange 4 count and F5 already finalized
+    public void orange05() {
+        //Orange 4 count and F5 already finalized
 
     }
 
     @OnClick(R.id.orange06)
-    public void orange06(){
-        orange5Count ++;
-        if(orange5Count < 6){
-            switch (orange5Count){
+    public void orange06() {
+        orange5Count++;
+        if (orange5Count < 6) {
+            switch (orange5Count) {
                 //orange
-                case 0: orange06.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    orange06.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     UserCubeInputView.F6 = "F";
                     break;
                 //green
-                case 1: orange06.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    orange06.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     UserCubeInputView.F6 = "R";
                     break;
                 //white
-                case 2: orange06.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    orange06.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     UserCubeInputView.F6 = "U";
                     break;
                 //red
-                case 3: orange06.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    orange06.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     UserCubeInputView.F6 = "B";
                     break;
                 //blue
-                case 4: orange06.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    orange06.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     UserCubeInputView.F6 = "L";
                     break;
                 //yellow
-                case 5: orange06.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    orange06.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     UserCubeInputView.F6 = "D";
                     break;
             }
@@ -500,32 +530,38 @@ public class OrangeFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.orange07)
-    public void orange07(){
-        orange6Count ++;
-        if(orange6Count < 6){
-            switch (orange6Count){
+    public void orange07() {
+        orange6Count++;
+        if (orange6Count < 6) {
+            switch (orange6Count) {
                 //orange
-                case 0: orange07.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    orange07.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     UserCubeInputView.F7 = "F";
                     break;
                 //green
-                case 1: orange07.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    orange07.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     UserCubeInputView.F7 = "R";
                     break;
                 //white
-                case 2: orange07.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    orange07.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     UserCubeInputView.F7 = "U";
                     break;
                 //red
-                case 3: orange07.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    orange07.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     UserCubeInputView.F7 = "B";
                     break;
                 //blue
-                case 4: orange07.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    orange07.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     UserCubeInputView.F7 = "L";
                     break;
                 //yellow
-                case 5: orange07.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    orange07.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     UserCubeInputView.F7 = "D";
                     break;
             }
@@ -537,32 +573,38 @@ public class OrangeFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.orange08)
-    public void orange08(){
-        orange7Count ++;
-        if(orange7Count < 6){
-            switch (orange7Count){
+    public void orange08() {
+        orange7Count++;
+        if (orange7Count < 6) {
+            switch (orange7Count) {
                 //orange
-                case 0: orange08.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    orange08.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     UserCubeInputView.F8 = "F";
                     break;
                 //green
-                case 1: orange08.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    orange08.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     UserCubeInputView.F8 = "R";
                     break;
                 //white
-                case 2: orange08.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    orange08.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     UserCubeInputView.F8 = "U";
                     break;
                 //red
-                case 3: orange08.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    orange08.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     UserCubeInputView.F8 = "B";
                     break;
                 //blue
-                case 4: orange08.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    orange08.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     UserCubeInputView.F8 = "L";
                     break;
                 //yellow
-                case 5: orange08.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    orange08.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     UserCubeInputView.F8 = "D";
                     break;
             }
@@ -574,32 +616,38 @@ public class OrangeFaceInputView extends LinearLayout{
     }
 
     @OnClick(R.id.orange09)
-    public void orange09(){
-        orange8Count ++;
-        if(orange8Count < 6){
-            switch (orange8Count){
+    public void orange09() {
+        orange8Count++;
+        if (orange8Count < 6) {
+            switch (orange8Count) {
                 //orange
-                case 0: orange09.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    orange09.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     UserCubeInputView.F9 = "F";
                     break;
                 //green
-                case 1: orange09.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    orange09.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     UserCubeInputView.F9 = "R";
                     break;
                 //white
-                case 2: orange09.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    orange09.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     UserCubeInputView.F9 = "U";
                     break;
                 //red
-                case 3: orange09.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    orange09.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     UserCubeInputView.F9 = "B";
                     break;
                 //blue
-                case 4: orange09.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    orange09.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     UserCubeInputView.F9 = "L";
                     break;
                 //yellow
-                case 5: orange09.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    orange09.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     UserCubeInputView.F9 = "D";
                     break;
             }
@@ -610,7 +658,7 @@ public class OrangeFaceInputView extends LinearLayout{
         }
     }
 
-    //Transition buttons
+//    Transition buttons
 //    @OnClick(R.id.orangeTransitionToBlue)
 //    public void orangeTransitionToBlue(){
 //        Flow flow = RubricsCubeApplication.getMainFlow();

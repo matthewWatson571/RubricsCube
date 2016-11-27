@@ -14,12 +14,12 @@ import com.teamcube.rubricscube.RubricsCubeApplication;
 public class YellowFaceInputStage extends IndexedStage {
     private final SlideRigger rigger;
 
-    public YellowFaceInputStage(Application context){
-        super (YellowFaceInputStage.class.getName());
+    public YellowFaceInputStage(Application context) {
+        super(YellowFaceInputStage.class.getName());
         this.rigger = new SlideRigger(context);
     }
 
-    public YellowFaceInputStage(){
+    public YellowFaceInputStage() {
         this(RubricsCubeApplication.getInstance());
 
     }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.teamcube.rubricscube.Views.WhiteFaceInputView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<com.teamcube.rubricscube.Views.WhiteFaceInputView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whiteFaceInputView" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlack"
-    android:id="@+id/whiteFaceInputView">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,144 +13,144 @@
 
         <!--white top -->
         <Button
+            android:id="@+id/white01"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/white01"
-            android:background="@color/colorPrimary"
-            android:layout_toLeftOf="@+id/white02"
-            android:layout_marginRight="7dp"
             android:layout_above="@+id/white04"
             android:layout_marginBottom="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/white02"
+            android:background="@color/colorPrimary"
 
-            />
+        />
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
             android:id="@+id/white02"
-            android:background="@color/colorPrimary"
-            android:layout_centerHorizontal="true"
-            android:layout_above="@+id/white05"
-            android:layout_marginBottom="7dp"
-
-            />
-        <Button
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/white03"
+            android:layout_above="@+id/white05"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
             android:background="@color/colorPrimary"
-            android:layout_toRightOf="@+id/white02"
-            android:layout_marginLeft="7dp"
+
+        />
+        <Button
+            android:id="@+id/white03"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_above="@+id/white06"
             android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/white02"
+            android:background="@color/colorPrimary"
 
-            />
+        />
 
         <!--white middle -->
         <Button
+            android:id="@+id/white04"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/white04"
-            android:background="@color/colorPrimary"
-            android:layout_toLeftOf="@+id/white05"
-            android:layout_marginRight="7dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="7dp"
-            />
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/white05"
+            android:background="@color/colorPrimary"
+        />
         <Button
+            android:id="@+id/white05"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/white05"
-            android:background="@color/colorWhite"
             android:layout_centerHorizontal="true"
-            android:gravity="center"
             android:layout_centerVertical="true"
-            />
+            android:background="@color/colorWhite"
+            android:gravity="center"
+        />
 
         <Button
+            android:id="@+id/white06"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/white06"
-            android:background="@color/colorPrimary"
-            android:layout_toRightOf="@+id/white05"
-            android:layout_marginLeft="7dp"
             android:layout_centerVertical="true"
-            />
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/white05"
+            android:background="@color/colorPrimary"
+        />
 
         <!--white bottom -->
         <Button
+            android:id="@+id/white07"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/white07"
-            android:background="@color/colorPrimary"
-            android:layout_toLeftOf="@+id/white08"
+            android:layout_below="@+id/white04"
             android:layout_marginRight="7dp"
             android:layout_marginTop="7dp"
-            android:layout_below="@+id/white04"
-            />
+            android:layout_toLeftOf="@+id/white08"
+            android:background="@color/colorPrimary"
+        />
         <Button
+            android:id="@+id/white08"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/white08"
-            android:background="@color/colorPrimary"
+            android:layout_below="@+id/white05"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="7dp"
-            android:layout_below="@+id/white05"
-            />
+            android:background="@color/colorPrimary"
+        />
         <Button
+            android:id="@+id/white09"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/white09"
-            android:background="@color/colorPrimary"
-            android:layout_toRightOf="@+id/white08"
+            android:layout_below="@+id/white06"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="7dp"
-            android:layout_below="@+id/white06"
-            />
+            android:layout_toRightOf="@+id/white08"
+            android:background="@color/colorPrimary"
+        />
 
         <!--Transition to other page button -->
         <!--at bottom -->
         <Button
+            android:id="@+id/whiteTransitionToOrange"
             android:layout_width="80dp"
             android:layout_height="40dp"
-            android:id="@+id/whiteTransitionToOrange"
-            android:background="@color/colorOrange"
-            android:layout_marginTop="5dp"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorOrange"
+        />
         <!-- at left -->
         <Button
+            android:id="@+id/whiteTransitionToBlue"
             android:layout_width="40dp"
             android:layout_height="80dp"
-            android:id="@+id/whiteTransitionToBlue"
-            android:background="@color/colorBlue"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
             android:layout_centerVertical="true"
-            />
+            android:layout_marginTop="5dp"
+            android:background="@color/colorBlue"
+            android:gravity="center"
+        />
 
         <!-- At right -->
         <Button
+            android:id="@+id/whiteTransitionToGreen"
             android:layout_width="40dp"
             android:layout_height="80dp"
-            android:id="@+id/whiteTransitionToGreen"
-            android:background="@color/colorGreen"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            />
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorGreen"
+            android:gravity="center"
+        />
 
         <!-- at Top -->
         <Button
+            android:id="@+id/whiteTransitionToRed"
             android:layout_width="80dp"
             android:layout_height="40dp"
-            android:id="@+id/whiteTransitionToRed"
-            android:background="@color/colorRed"
-            android:layout_marginTop="5dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorRed"
 
-            />
+        />
     </RelativeLayout>
 
 </com.teamcube.rubricscube.Views.WhiteFaceInputView>

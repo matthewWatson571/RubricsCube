@@ -317,32 +317,38 @@ public class GreenFaceInputView extends LinearLayout {
     }
 
     @OnClick(R.id.green01)
-    public void green01(){
-        green9Count ++;
-        if(green9Count < 6){
-            switch (green9Count){
+    public void green01() {
+        green9Count++;
+        if (green9Count < 6) {
+            switch (green9Count) {
                 //orange
-                case 0: green01.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    green01.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     R1 = "F";
                     break;
                 //green
-                case 1: green01.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    green01.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     R1 = "R";
                     break;
                 //white
-                case 2: green01.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    green01.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     R1 = "U";
                     break;
                 //red
-                case 3: green01.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    green01.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     R1 = "B";
                     break;
                 //blue
-                case 4: green01.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    green01.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     R1 = "L";
                     break;
                 //yellow
-                case 5: green01.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    green01.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     R1 = "D";
                     break;
             }
@@ -354,32 +360,38 @@ public class GreenFaceInputView extends LinearLayout {
     }
 
     @OnClick(R.id.green02)
-    public void green02(){
-        green10Count ++;
-        if(green10Count < 6){
-            switch (green10Count){
+    public void green02() {
+        green10Count++;
+        if (green10Count < 6) {
+            switch (green10Count) {
                 //orange
-                case 0: green02.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    green02.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     R2 = "F";
                     break;
                 //green
-                case 1: green02.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    green02.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     R2 = "R";
                     break;
                 //white
-                case 2: green02.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    green02.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     R2 = "U";
                     break;
                 //red
-                case 3: green02.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    green02.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     R2 = "B";
                     break;
                 //blue
-                case 4: green02.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    green02.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     R2 = "L";
                     break;
                 //yellow
-                case 5: green02.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    green02.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     R2 = "D";
                     break;
             }
@@ -391,32 +403,38 @@ public class GreenFaceInputView extends LinearLayout {
     }
 
     @OnClick(R.id.green03)
-    public void green03(){
-        green11Count ++;
-        if(green11Count < 6){
-            switch (green11Count){
+    public void green03() {
+        green11Count++;
+        if (green11Count < 6) {
+            switch (green11Count) {
                 //orange
-                case 0: green03.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    green03.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     R3 = "F";
                     break;
                 //green
-                case 1: green03.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    green03.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     R3 = "R";
                     break;
                 //white
-                case 2: green03.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    green03.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     R3 = "U";
                     break;
                 //red
-                case 3: green03.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    green03.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     R3 = "B";
                     break;
                 //blue
-                case 4: green03.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    green03.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     R3 = "L";
                     break;
                 //yellow
-                case 5: green03.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    green03.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     R3 = "D";
                     break;
             }
@@ -428,32 +446,38 @@ public class GreenFaceInputView extends LinearLayout {
     }
 
     @OnClick(R.id.green04)
-    public void green04(){
-        green12Count ++;
-        if(green12Count < 6){
-            switch (green12Count){
+    public void green04() {
+        green12Count++;
+        if (green12Count < 6) {
+            switch (green12Count) {
                 //orange
-                case 0: green04.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    green04.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     R4 = "F";
                     break;
                 //green
-                case 1: green04.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    green04.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     R4 = "R";
                     break;
                 //white
-                case 2: green04.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    green04.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     R4 = "U";
                     break;
                 //red
-                case 3: green04.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    green04.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     R4 = "B";
                     break;
                 //blue
-                case 4: green04.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    green04.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     R4 = "L";
                     break;
                 //yellow
-                case 5: green04.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    green04.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     R4 = "D";
                     break;
             }
@@ -465,37 +489,43 @@ public class GreenFaceInputView extends LinearLayout {
     }
 
     @OnClick(R.id.green05)
-    public void green05(){
-      //R5 is finalized on User cube input
+    public void green05() {
+        //R5 is finalized on User cube input
     }
 
     @OnClick(R.id.green06)
-    public void green06(){
-        green14Count ++;
-        if(green14Count < 6){
-            switch (green14Count){
+    public void green06() {
+        green14Count++;
+        if (green14Count < 6) {
+            switch (green14Count) {
                 //orange
-                case 0: green06.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    green06.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     R6 = "F";
                     break;
                 //green
-                case 1: green06.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    green06.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     R6 = "R";
                     break;
                 //white
-                case 2: green06.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    green06.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     R6 = "U";
                     break;
                 //red
-                case 3: green06.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    green06.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     R6 = "B";
                     break;
                 //blue
-                case 4: green06.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    green06.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     R6 = "L";
                     break;
                 //yellow
-                case 5: green06.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    green06.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     R6 = "D";
                     break;
             }
@@ -507,32 +537,38 @@ public class GreenFaceInputView extends LinearLayout {
     }
 
     @OnClick(R.id.green07)
-    public void green07(){
-        green15Count ++;
-        if(green15Count < 6){
-            switch (green15Count){
+    public void green07() {
+        green15Count++;
+        if (green15Count < 6) {
+            switch (green15Count) {
                 //orange
-                case 0: green07.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    green07.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     R7 = "F";
                     break;
                 //green
-                case 1: green07.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    green07.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     R7 = "R";
                     break;
                 //white
-                case 2: green07.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    green07.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     R7 = "U";
                     break;
                 //red
-                case 3: green07.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    green07.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     R7 = "B";
                     break;
                 //blue
-                case 4: green07.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    green07.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     R7 = "L";
                     break;
                 //yellow
-                case 5: green07.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    green07.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     R7 = "D";
                     break;
             }
@@ -544,32 +580,38 @@ public class GreenFaceInputView extends LinearLayout {
     }
 
     @OnClick(R.id.green08)
-    public void green08(){
-        green16Count ++;
-        if(green16Count < 6){
-            switch (green16Count){
+    public void green08() {
+        green16Count++;
+        if (green16Count < 6) {
+            switch (green16Count) {
                 //orange
-                case 0: green08.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    green08.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     R8 = "F";
                     break;
                 //green
-                case 1: green08.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    green08.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     R8 = "R";
                     break;
                 //white
-                case 2: green08.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    green08.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     R8 = "U";
                     break;
                 //red
-                case 3: green08.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    green08.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     R8 = "B";
                     break;
                 //blue
-                case 4: green08.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    green08.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     R8 = "L";
                     break;
                 //yellow
-                case 5: green08.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    green08.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     R8 = "D";
                     break;
             }
@@ -581,32 +623,38 @@ public class GreenFaceInputView extends LinearLayout {
     }
 
     @OnClick(R.id.green09)
-    public void green09(){
-        green17Count ++;
-        if(green17Count < 6){
-            switch (green17Count){
+    public void green09() {
+        green17Count++;
+        if (green17Count < 6) {
+            switch (green17Count) {
                 //orange
-                case 0: green09.setBackgroundColor(Color.argb(255, 255, 149, 0));
+                case 0:
+                    green09.setBackgroundColor(Color.argb(255, 255, 149, 0));
                     R9 = "F";
                     break;
                 //green
-                case 1: green09.setBackgroundColor(Color.argb(255, 41, 198, 60));
+                case 1:
+                    green09.setBackgroundColor(Color.argb(255, 41, 198, 60));
                     R9 = "R";
                     break;
                 //white
-                case 2: green09.setBackgroundColor(Color.argb(255, 255, 255, 255));
+                case 2:
+                    green09.setBackgroundColor(Color.argb(255, 255, 255, 255));
                     R9 = "U";
                     break;
                 //red
-                case 3: green09.setBackgroundColor(Color.argb(255, 255, 40, 40));
+                case 3:
+                    green09.setBackgroundColor(Color.argb(255, 255, 40, 40));
                     R9 = "B";
                     break;
                 //blue
-                case 4: green09.setBackgroundColor(Color.argb(255, 0, 0, 255));
+                case 4:
+                    green09.setBackgroundColor(Color.argb(255, 0, 0, 255));
                     R9 = "L";
                     break;
                 //yellow
-                case 5: green09.setBackgroundColor(Color.argb(255, 246, 255, 0));
+                case 5:
+                    green09.setBackgroundColor(Color.argb(255, 246, 255, 0));
                     R9 = "D";
                     break;
             }

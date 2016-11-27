@@ -3,11 +3,11 @@ package com.teamcube.rubricscube.Stages;
 import com.davidstemmer.screenplay.stage.XmlStage;
 
 /**
-<<<<<<< HEAD
+ * <<<<<<< HEAD
  * Created by aaroncampbell on 11/17/16.
  */
 
-public class IndexedStage extends XmlStage{
+public class IndexedStage extends XmlStage {
     public final String id;
 
     protected IndexedStage(String id) {

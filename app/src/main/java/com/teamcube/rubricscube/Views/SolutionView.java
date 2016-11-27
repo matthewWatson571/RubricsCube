@@ -32,6 +32,7 @@ public class SolutionView extends RelativeLayout {
         this.context = context;
     }
 
+
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
@@ -41,6 +42,7 @@ public class SolutionView extends RelativeLayout {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(solutionAdapter);
+
         printInstructions(UserCubeInputView.splitRub);
         solutionAdapter.notifyDataSetChanged();
     }
