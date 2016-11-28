@@ -2117,8 +2117,7 @@ public class UserCubeInputView extends LinearLayout {
     @OnClick(R.id.solveButton)
     public void solveCube() {
 
-        resetButton.setEnabled(false);
-        solveButton.setEnabled(false);
+
         
         progressSpinner.setVisibility(VISIBLE);
 
@@ -2162,6 +2161,9 @@ public class UserCubeInputView extends LinearLayout {
         if (allCubiesAdded == 135) {
             String ans = solution(mixCube, 21, 10, false);
             splitRub = ans.split("\\s+");
+
+            resetButton.setEnabled(false);
+            solveButton.setEnabled(false);
 
             Log.d("mixCube", mixCube);
             Log.d("ans", ans);
