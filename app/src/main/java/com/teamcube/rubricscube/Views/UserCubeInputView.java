@@ -369,6 +369,10 @@ public class UserCubeInputView extends LinearLayout {
         super.onFinishInflate();
         ButterKnife.bind(this);
 
+        resetButton.setEnabled(true);
+        solveButton.setEnabled(true);
+        progressSpinner.setVisibility(GONE);
+
         //Orange on inflate populate from zoom view
         switch (orange0Count) {
             //orange
@@ -2112,40 +2116,49 @@ public class UserCubeInputView extends LinearLayout {
     //Solve button and reset click
     @OnClick(R.id.solveButton)
     public void solveCube() {
+
+        resetButton.setEnabled(false);
+        solveButton.setEnabled(false);
+        
+        progressSpinner.setVisibility(VISIBLE);
+
         allCubiesAdded = (
                 // Add the Orange
-                orange0Count + orange1Count + orange2Count + orange3Count +
-                        orange4Count + orange5Count + orange6Count + orange7Count + orange8Count +
-                        // Add the Green
-                        green9Count + green10Count + green11Count + green12Count + green13Count +
-                        green14Count + green15Count + green16Count + green17Count +
-                        // Add the White
-                        white18Count + white19Count + white20Count + white21Count + white22Count +
-                        white23Count + white24Count + white25Count + white26Count +
-                        // Add the Red
-                        red27Count + red28Count + red29Count +
-                        red30Count + red31Count + red32Count + red33Count + red34Count + red35Count +
-                        // Add the Blue
-                        blue36Count + blue37Count + blue38Count + blue39Count + blue40Count + blue41Count +
-                        blue42Count + blue43Count + blue44Count +
-                        // Add the Yellow
-                        yellow45Count + yellow46Count + yellow47Count + yellow48Count + yellow49Count +
-                        yellow50Count + yellow51Count + yellow52Count + yellow53Count);
+                    orange0Count + orange1Count + orange2Count + orange3Count +
+                    orange4Count + orange5Count + orange6Count + orange7Count + orange8Count +
+                // Add the Green
+                    green9Count + green10Count + green11Count + green12Count + green13Count +
+                    green14Count + green15Count + green16Count + green17Count +
+                // Add the White
+                    white18Count + white19Count + white20Count + white21Count + white22Count +
+                    white23Count + white24Count + white25Count + white26Count +
+                // Add the Red
+                    red27Count + red28Count + red29Count +
+                    red30Count + red31Count + red32Count + red33Count + red34Count + red35Count +
+                // Add the Blue
+                    blue36Count + blue37Count + blue38Count + blue39Count + blue40Count + blue41Count +
+                    blue42Count + blue43Count + blue44Count +
+                // Add the Yellow
+                    yellow45Count + yellow46Count + yellow47Count + yellow48Count + yellow49Count +
+                    yellow50Count + yellow51Count + yellow52Count + yellow53Count);
 
         String mixCube =
-                U1 + U2 + U3 + U4 + U5 + U6 + U7 + U8 + U9 +
+                        U1 + U2 + U3 + U4 + U5 + U6 + U7 + U8 + U9 +
                         R1 + R2 + R3 + R4 + R5 + R6 + R7 + R8 + R9 +
                         F1 + F2 + F3 + F4 + F5 + F6 + F7 + F8 + F9 +
                         D1 + D2 + D3 + D4 + D5 + D6 + D7 + D8 + D9 +
                         L1 + L2 + L3 + L4 + L5 + L6 + L7 + L8 + L9 +
                         B1 + B2 + B3 + B4 + B5 + B6 + B7 + B8 + B9;
 
+        Log.d(">>>>>>>>", String.valueOf(allCubiesAdded));
+
 //TestCube
 
 //        String mixCube = "LLFRURLUUFBRBRRRLRDFLUFDDUDLLBFDBUFFBUBDLBRDFUFUDBLDRB";
 //        allCubiesAdded = 135;
 
-        //If all cubies combined equals 135 then it will show spinner and solve once algorithm is filled in.
+        // If all cubies combined equals 135 then it will show a progress bar and solve once
+        // algorithm is filled in.
         if (allCubiesAdded == 135) {
             String ans = solution(mixCube, 21, 10, false);
             splitRub = ans.split("\\s+");
@@ -2159,7 +2172,9 @@ public class UserCubeInputView extends LinearLayout {
 
             flow.setHistory(newHistory, Flow.Direction.FORWARD);
 
+
         } else {
+            progressSpinner.setVisibility(GONE);
             Toast.makeText(context, (getContext().getString(R.string.cube_error)), Toast.LENGTH_LONG).show();
 
         }

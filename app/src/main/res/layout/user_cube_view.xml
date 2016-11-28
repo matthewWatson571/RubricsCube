@@ -607,14 +607,22 @@
             android:textSize="25sp"
         />
 
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressSpinner"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"/>-->
+
         <ProgressBar
             android:id="@+id/progressSpinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:foregroundGravity="center"
-            android:progressDrawable="@drawable/giphy"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            android:layout_alignParentStart="true" />
+
+        <!--android:progressDrawable="@drawable/giphy-->
 
         <!-- Random Button and Help button
         <Button
