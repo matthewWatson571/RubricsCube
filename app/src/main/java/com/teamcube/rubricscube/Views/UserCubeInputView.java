@@ -368,6 +368,9 @@ public class UserCubeInputView extends LinearLayout {
     protected void onFinishInflate() {
         super.onFinishInflate();
         ButterKnife.bind(this);
+
+        resetButton.setEnabled(true);
+        solveButton.setEnabled(true);
         progressSpinner.setVisibility(GONE);
 
         //Orange on inflate populate from zoom view
@@ -2113,6 +2116,10 @@ public class UserCubeInputView extends LinearLayout {
     //Solve button and reset click
     @OnClick(R.id.solveButton)
     public void solveCube() {
+
+        resetButton.setEnabled(false);
+        solveButton.setEnabled(false);
+        
         progressSpinner.setVisibility(VISIBLE);
 
         allCubiesAdded = (
