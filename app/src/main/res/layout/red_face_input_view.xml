@@ -13,18 +13,18 @@
 
         <!--red top -->
         <Button
-            android:id="@+id/red01"
+            android:id="@+id/red09"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_above="@+id/red04"
+            android:layout_above="@+id/red06"
             android:layout_marginBottom="7dp"
             android:layout_marginRight="7dp"
-            android:layout_toLeftOf="@+id/red02"
+            android:layout_toLeftOf="@+id/red08"
             android:background="@color/colorPrimary"
 
         />
         <Button
-            android:id="@+id/red02"
+            android:id="@+id/red08"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_above="@+id/red05"
@@ -34,20 +34,20 @@
 
         />
         <Button
-            android:id="@+id/red03"
+            android:id="@+id/red07"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_above="@+id/red06"
+            android:layout_above="@+id/red04"
             android:layout_marginBottom="7dp"
             android:layout_marginLeft="7dp"
-            android:layout_toRightOf="@+id/red02"
+            android:layout_toRightOf="@+id/red08"
             android:background="@color/colorPrimary"
 
         />
 
         <!--red middle -->
         <Button
-            android:id="@+id/red04"
+            android:id="@+id/red06"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_centerVertical="true"
@@ -67,7 +67,7 @@
         />
 
         <Button
-            android:id="@+id/red06"
+            android:id="@+id/red04"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_centerVertical="true"
@@ -78,17 +78,17 @@
 
         <!--red bottom -->
         <Button
-            android:id="@+id/red07"
+            android:id="@+id/red03"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_below="@+id/red04"
+            android:layout_below="@+id/red06"
             android:layout_marginRight="7dp"
             android:layout_marginTop="7dp"
-            android:layout_toLeftOf="@+id/red08"
+            android:layout_toLeftOf="@+id/red02"
             android:background="@color/colorPrimary"
         />
         <Button
-            android:id="@+id/red08"
+            android:id="@+id/red02"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_below="@+id/red05"
@@ -97,60 +97,60 @@
             android:background="@color/colorPrimary"
         />
         <Button
-            android:id="@+id/red09"
+            android:id="@+id/red01"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_below="@+id/red06"
+            android:layout_below="@+id/red04"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="7dp"
-            android:layout_toRightOf="@+id/red08"
+            android:layout_toRightOf="@+id/red02"
             android:background="@color/colorPrimary"
         />
 
         <!--Transition to other page button -->
         <!--at bottom -->
         <Button
-            android:id="@+id/redTransitionToYellow"
+            android:id="@+id/redTransitionToWhite"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:background="@color/colorYellow"
+            android:background="@color/colorWhite"
         />
         <!-- at left -->
-        <Button
-            android:id="@+id/redTransitionToGreen"
-            android:layout_width="40dp"
-            android:layout_height="80dp"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="5dp"
-            android:background="@color/colorGreen"
-            android:gravity="center"
-        />
-
-        <!-- At right -->
         <Button
             android:id="@+id/redTransitionToBlue"
             android:layout_width="40dp"
             android:layout_height="80dp"
-            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="5dp"
             android:background="@color/colorBlue"
             android:gravity="center"
         />
 
+        <!-- At right -->
+        <Button
+            android:id="@+id/redTransitionToGreen"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorGreen"
+            android:gravity="center"
+        />
+
         <!-- at Top -->
         <Button
-            android:id="@+id/redTransitionToWhite"
+            android:id="@+id/redTransitionToYellow"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:background="@color/colorWhite"
-
+            android:background="@color/colorYellow"
         />
+
     </RelativeLayout>
 
 </com.teamcube.rubricscube.Views.RedFaceInputView>
